@@ -5,10 +5,67 @@
 (function () {
   "use strict";
 
+  /* ---------- Checklist: progressive section disclosure ---------- */
+  function initChecklistSections(root) {
+    if (!root || root.classList.contains("enhanced")) return;
+    var sections = Array.prototype.slice.call(root.querySelectorAll(":scope > section"));
+    if (!sections.length) return;
+
+    function openSection(section) {
+      if (!section) return;
+      section.classList.add("is-open");
+      var toggle = section.querySelector(".checklist-section-toggle");
+      if (toggle) toggle.setAttribute("aria-expanded", "true");
+    }
+
+    sections.forEach(function (section, index) {
+      var heading = section.querySelector("h3");
+      if (!heading) return;
+
+      var body = document.createElement("div");
+      body.className = "checklist-body";
+      while (heading.nextSibling) body.appendChild(heading.nextSibling);
+
+      var button = document.createElement("button");
+      button.type = "button";
+      button.className = "checklist-section-toggle";
+      button.setAttribute("aria-expanded", index === 0 ? "true" : "false");
+
+      var count = section.querySelectorAll("input[type='checkbox']").length;
+      var badge = document.createElement("span");
+      badge.className = "checklist-count";
+      badge.textContent = count + " checks";
+
+      button.appendChild(heading);
+      button.appendChild(badge);
+      section.insertBefore(button, section.firstChild);
+      section.appendChild(body);
+      if (index === 0) section.classList.add("is-open");
+
+      button.addEventListener("click", function () {
+        var isOpen = section.classList.toggle("is-open");
+        button.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    });
+
+    document.querySelectorAll(".section-jump a[href^='#']").forEach(function (link) {
+      link.addEventListener("click", function () {
+        var target = document.querySelector(link.getAttribute("href"));
+        openSection(target);
+      });
+    });
+
+    if (window.location.hash) openSection(document.querySelector(window.location.hash));
+
+    root.classList.add("enhanced");
+  }
+
   /* ---------- Checklist: localStorage persistence ---------- */
   function initChecklist() {
     var root = document.querySelector("[data-checklist]");
     if (!root) return;
+
+    initChecklistSections(root);
 
     var id = root.getAttribute("data-checklist");
     var key = "rbyb-checklist-" + id;

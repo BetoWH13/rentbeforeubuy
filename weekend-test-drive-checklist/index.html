@@ -49,17 +49,21 @@
     <div><strong>3. Decide</strong><span>Turn notes into must-haves, deal-breakers, and next checks.</span></div>
   </section>
 
-  <section>
-    <h2>How to use the Weekend Platform Test</h2>
-    <p>Book a weekend rental in the same category as the car you are considering — for example, "compact SUV or similar" if you are shopping a compact SUV. You will probably not get the exact make, model, or trim you intend to buy, and that is fine. The point is to test the <strong>platform and category</strong>, not to review a specific vehicle.</p>
-    <p>Run the checklist across at least one full day that includes your real commute, your real errands, and your real passengers. A Sunday-morning loop on empty roads will not surface the annoyances that compound over years. A Saturday with school drop-off, grocery loading, and a parking-garage errand will.</p>
-    <p>After the rental, review your notes before you go back to shopping. The goal is to come out with three things: (1) a confident answer on whether the category fits your life, (2) a list of must-have features you now know you cannot live without, and (3) a list of deal-breakers that should disqualify specific trims.</p>
+  <section class="intro-panel">
+    <h2>Start here</h2>
+    <p>Book a weekend rental in the same category as the car you are considering. You probably will not get the exact trim, and that is fine. The point is to test the <strong>platform and category</strong> in your real life.</p>
+
+    <details class="read-more">
+      <summary>How to run the test well</summary>
+      <p>Run the checklist across at least one full day that includes your real commute, your real errands, and your real passengers. A Sunday-morning loop on empty roads will not surface the annoyances that compound over years. A Saturday with school drop-off, grocery loading, and a parking-garage errand will.</p>
+      <p>After the rental, review your notes before you go back to shopping. The goal is to come out with three things: a confident answer on whether the category fits your life, a list of must-have features, and a list of deal-breakers that should disqualify specific trims.</p>
+    </details>
 
     <div class="checklist-tools">
       <button type="button" data-action="print-checklist" class="primary">Print this checklist</button>
       <button type="button" data-action="reset-checklist">Clear saved checks &amp; notes</button>
     </div>
-    <p class="micro" style="font-size:0.82rem;color:var(--muted);">Your checks and notes are stored only in this browser. Clearing your browser data will erase them. Print or copy your notes before clearing.</p>
+    <p class="micro">Your checks and notes are stored only in this browser. Print or copy your notes before clearing.</p>
   </section>
 
   <div class="cta affiliate-cta">
@@ -69,9 +73,24 @@
     <span class="micro">Opens in a new tab. We may earn a commission if you book through this link, at no additional cost to you.</span>
   </div>
 
-  <form class="checklist" data-checklist="weekend-test-v1">
+  <nav class="section-jump" aria-label="Checklist sections">
+    <a href="#pre-rental">Setup</a>
+    <a href="#first-drive">First drive</a>
+    <a href="#seating">Seating</a>
+    <a href="#cargo">Cargo</a>
+    <a href="#parking">Parking</a>
+    <a href="#family">Family</a>
+    <a href="#controls">Controls</a>
+    <a href="#ev-hybrid">EV/hybrid</a>
+    <a href="#highway">Highway</a>
+    <a href="#night">Night</a>
+    <a href="#limits">Limits</a>
+    <a href="#decision">Decision</a>
+  </nav>
 
-    <section>
+  <form class="checklist" data-checklist="weekend-test-v2">
+
+    <section id="pre-rental">
       <h3>1. Pre-rental: set up the test</h3>
       <label><input type="checkbox" name="pre-1"> I wrote down the exact car I am considering buying (make, model, trim, year if known).</label>
       <label><input type="checkbox" name="pre-2"> I booked a rental in the same category (e.g., compact SUV, full-size sedan, minivan, midsize truck).</label>
@@ -87,7 +106,7 @@
       <textarea class="notes" name="pre-notes" placeholder="Which car are you considering? Which category did you book? Anything specific you want to watch for?"></textarea>
     </section>
 
-    <section>
+    <section id="first-drive">
       <h3>2. First drive and immediate fit</h3>
       <label><input type="checkbox" name="first-1"> Within the first 10 minutes, I noticed any awkward controls, bad sightlines, uncomfortable seating, or strange pedal/steering position.</label>
       <label><input type="checkbox" name="first-2"> The vehicle felt easy enough to place in the lane, pull out of junctions, and judge around curbs without guessing.</label>
@@ -97,7 +116,7 @@
       <textarea class="notes" name="first-notes" placeholder="What bothered you immediately? What felt natural right away?"></textarea>
     </section>
 
-    <section>
+    <section id="seating">
       <h3>3. Seating, visibility, and body fit</h3>
       <label><input type="checkbox" name="seat-1"> I found a comfortable driving position within 5 minutes without fighting the controls.</label>
       <label><input type="checkbox" name="seat-2"> My lower back, shoulders, and neck still feel okay after a 30+ minute drive, not just after 5 minutes.</label>
@@ -111,7 +130,7 @@
       <textarea class="notes" name="seat-notes" placeholder="Any aches, blind spots, or fit problems worth remembering?"></textarea>
     </section>
 
-    <section>
+    <section id="cargo">
       <h3>4. Cargo, load shape, and access</h3>
       <label><input type="checkbox" name="cargo-1"> The liftgate or trunk opens high enough (or low enough) that I can reach in without straining.</label>
       <label><input type="checkbox" name="cargo-2"> The cargo opening is wide enough for the largest single item I regularly carry (stroller, bike, crate, furniture).</label>
@@ -125,7 +144,7 @@
       <textarea class="notes" name="cargo-notes" placeholder="What fit, what didn't, what surprised you about the cargo shape?"></textarea>
     </section>
 
-    <section>
+    <section id="parking">
       <h3>5. Parking, garage, and daily fit</h3>
       <label><input type="checkbox" name="park-1"> The vehicle fits in my actual garage with the door closed and room to walk around.</label>
       <label><input type="checkbox" name="park-2"> The vehicle fits in my regular parking spot at work, home, or school without overflow.</label>
@@ -138,7 +157,7 @@
       <textarea class="notes" name="park-notes" placeholder="Any spots where the size felt wrong?"></textarea>
     </section>
 
-    <section>
+    <section id="family">
       <h3>6. Family, car seats, pets, and passengers</h3>
       <label><input type="checkbox" name="fam-1"> My actual car seat installs cleanly with the LATCH/ISOFIX anchors without forcing it.</label>
       <label><input type="checkbox" name="fam-2"> The rear door opens wide enough to load a rear-facing car seat without banging my head.</label>
@@ -154,7 +173,7 @@
       <textarea class="notes" name="fam-notes" placeholder="Car seat installs, passenger comfort, third-row reality."></textarea>
     </section>
 
-    <section>
+    <section id="controls">
       <h3>7. Controls, infotainment, and daily annoyance</h3>
       <label><input type="checkbox" name="ctrl-1"> I can adjust climate, volume, and mirrors without digging through a touchscreen while driving.</label>
       <label><input type="checkbox" name="ctrl-2"> The most-used controls (wipers, lights, defrost, mirrors) are physical buttons or intuitive within the first day.</label>
@@ -167,7 +186,7 @@
       <textarea class="notes" name="ctrl-notes" placeholder="What felt intuitive? What stayed annoying?"></textarea>
     </section>
 
-    <section>
+    <section id="ev-hybrid">
       <h3>8. EV and hybrid-specific: charging, regen, and range reality</h3>
       <p style="font-size:0.88rem;color:var(--muted);margin-top:0;">Skip this section if you are not testing an EV. See <a href="/rent-before-buying-an-ev/">the EV page</a> for context.</p>
       <label><input type="checkbox" name="ev-1"> I charged at home (or at the plug I would actually use) at least once and timed how long it took.</label>
@@ -182,7 +201,7 @@
       <textarea class="notes" name="ev-notes" placeholder="Real range, charging friction, home setup reality."></textarea>
     </section>
 
-    <section>
+    <section id="highway">
       <h3>9. Highway, ride, noise, and comfort over real roads</h3>
       <label><input type="checkbox" name="ride-1"> The ride over my real, broken local roads is tolerable — not just over the smooth highway.</label>
       <label><input type="checkbox" name="ride-2"> Wind and tire noise at highway speed is acceptable for the kind of driving I actually do.</label>
@@ -196,7 +215,7 @@
       <textarea class="notes" name="ride-notes" placeholder="Any roads where the ride felt wrong?"></textarea>
     </section>
 
-    <section>
+    <section id="night">
       <h3>10. Night driving and bad-weather visibility</h3>
       <label><input type="checkbox" name="night-1"> I drove after dark or in low light to judge headlight reach, glare, mirror visibility, and dashboard brightness.</label>
       <label><input type="checkbox" name="night-2"> Backup camera, parking sensors, and side mirrors remained useful at night or in rain.</label>
@@ -206,7 +225,7 @@
       <textarea class="notes" name="night-notes" placeholder="Night glare, headlights, wet-weather confidence, camera usefulness."></textarea>
     </section>
 
-    <section>
+    <section id="limits">
       <h3>11. What the rental cannot prove</h3>
       <label><input type="checkbox" name="limits-1"> I understand this rental cannot reveal hidden damage on the exact used car I may buy.</label>
       <label><input type="checkbox" name="limits-2"> I understand this rental cannot prove battery health on the exact used EV or hybrid I may buy.</label>
@@ -217,7 +236,7 @@
       <textarea class="notes" name="limits-notes" placeholder="What still needs to be checked before buying the actual car?"></textarea>
     </section>
 
-    <section>
+    <section id="decision">
       <h3>12. Post-rental: convert observations to decisions</h3>
       <label><input type="checkbox" name="post-1"> I read back through my notes before looking at listings.</label>
       <label><input type="checkbox" name="post-2"> I wrote down the 3–5 must-have features I confirmed I cannot live without.</label>

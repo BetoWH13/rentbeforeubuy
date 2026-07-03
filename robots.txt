@@ -1,0 +1,5 @@
+# Rent Before You Buy - robots.txt
+# Public indexing is allowed. Add the final absolute sitemap URL after the domain is chosen.
+
+User-agent: *
+Allow: /

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weekend Rental Cost vs Buyer's Remorse — Rent Before You Buy</title>
+  <meta name="description" content="A simple, honest calculator to compare the small known cost of a weekend rental against the large possible cost of buying the wrong car. No invented prices, no fake precision.">
+  <link rel="canonical" href="/weekend-rental-cost-vs-buyers-remorse/">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Rent Before You Buy","item":"/"},
+      {"@type":"ListItem","position":2,"name":"Weekend rental cost vs buyer's remorse","item":"/weekend-rental-cost-vs-buyers-remorse/"}
+    ]
+  }
+  </script>
+</head>
+<body>
+<header class="site">
+  <div class="shell row">
+    <a class="brand" href="/">Rent Before You Buy<small>The Weekend Platform Test</small></a>
+    <nav class="primary" aria-label="Primary">
+      <a href="/weekend-test-drive-checklist/">Checklist</a>
+      <a href="/rent-before-buying-an-ev/">EV</a>
+      <a href="/rent-before-buying-an-suv/">SUV</a>
+      <a href="/rent-before-buying-a-minivan/">Minivan</a>
+      <a href="/rent-before-buying-a-truck/">Truck</a>
+      <a href="/used-car-platform-test/">Used / CPO</a>
+      <a href="/how-to-find-a-similar-rental-car/">Find a Rental</a>
+    </nav>
+  </div>
+</header>
+
+<main class="shell">
+  <div class="crumbs"><a href="/">Home</a><span>›</span>Weekend rental cost vs buyer's remorse</div>
+
+  <section class="hero">
+    <div class="eyebrow">Decision framing</div>
+    <h1>Weekend rental cost vs buyer's remorse.</h1>
+    <p class="lede">A weekend rental is a small, known, reversible cost. Buying the wrong car is a large, hard-to-reverse cost. This page gives you a simple, honest way to compare the two — without invented prices or fake precision. Put in your own numbers; get a framing, not a forecast.</p>
+  </section>
+
+  <section>
+    <h2>What this page helps you decide</h2>
+    <p>This page helps you answer one narrow question: is the cost of a weekend rental small enough, relative to the financial risk of buying the wrong car, to be worth doing? It does not tell you which car to buy, it does not quote specific rental rates or vehicle prices (those vary too widely), and it does not provide financial advice. It gives you a structured way to think about the tradeoff using your own numbers.</p>
+    <p>The framing is deliberately simple. We do not model depreciation curves, financing costs, insurance differentials, or total cost of ownership — those require tools and assumptions that are out of scope for a decision-framing page. We compare two numbers: the rental cost you would actually pay, and a regret-exposure estimate you control. If the first is small relative to the second, the rental is easy to justify. If not, you have to decide based on how uncertain you are.</p>
+  </section>
+
+  <section>
+    <h2>Why this page exists beyond Google</h2>
+    <p>Google can find rental rates and depreciation calculators. AI can summarize total cost of ownership. None of those combine into a simple yes/no framing for the specific question: "should I spend a few hundred dollars on a weekend rental to avoid a multi-thousand-dollar mistake?" That question is personal, and the answer depends on numbers only you can supply — your rental cost, your purchase price, and your honest estimate of how likely you are to regret the purchase.</p>
+    <p>The calculator below is intentionally not a forecasting tool. It is a framing tool. It shows you the ratio between the rental cost and the regret exposure, and gives you a plain-language interpretation. The interpretation is opinionated but honest: it does not tell you what to do, it tells you what the ratio means.</p>
+  </section>
+
+  <section>
+    <h2>The calculator</h2>
+    <p>Enter your own numbers. Nothing is sent to a server — the calculation runs in your browser. The "regret exposure" line is your honest estimate of the financial hit if you buy the wrong car and want to get out of it in 1–2 years. A reasonable starting point is the first-year depreciation on a typical new or used car in the category you are considering, plus transaction costs (sales tax, registration, dealer fees) that you would eat twice if you flipped the car quickly. Use 10–20% of the purchase price as a starting point and adjust based on your uncertainty.</p>
+
+    <div class="calc" data-calc>
+      <div class="row">
+        <label for="rental-days">Rental length (days)</label>
+        <input type="number" id="rental-days" data-in="rental-days" value="2" min="1" max="14" step="1">
+      </div>
+      <div class="row">
+        <label for="daily-rate">Daily rental rate (USD)</label>
+        <input type="number" id="daily-rate" data-in="daily-rate" value="60" min="0" step="5">
+      </div>
+      <div class="row">
+        <label for="insurance">Rental insurance / LDW (USD total)</label>
+        <input type="number" id="insurance" data-in="insurance" value="0" min="0" step="5">
+      </div>
+      <div class="row">
+        <label for="fuel">Fuel / charging (USD total)</label>
+        <input type="number" id="fuel" data-in="fuel" value="40" min="0" step="5">
+      </div>
+      <div class="row">
+        <label for="other">Other (tolls, parking, pickup) (USD total)</label>
+        <input type="number" id="other" data-in="other" value="0" min="0" step="5">
+      </div>
+      <div class="row">
+        <label for="purchase-price">Vehicle purchase price you are considering (USD)</label>
+        <input type="number" id="purchase-price" data-in="purchase-price" value="30000" min="0" step="500">
+      </div>
+      <div class="row">
+        <label for="remorse-pct">Regret exposure (% of price if you flip in 1–2 yrs)</label>
+        <input type="number" id="remorse-pct" data-in="remorse-pct" value="15" min="0" max="80" step="1">
+      </div>
+
+      <div class="result">
+        <p>Weekend rental cost: <span class="num" data-out="rental">$0</span></p>
+        <p>Regret exposure estimate: <span class="num" data-out="remorse">$0</span></p>
+        <p>Ratio (regret ÷ rental): <span class="num" data-out="ratio">—</span></p>
+        <p data-out="verdict" style="margin-top:0.8em;color:var(--ink-soft);">Enter your numbers above to see the comparison.</p>
+        <p class="micro">This is a framing tool, not a forecast. It uses your inputs and a simple heuristic. It does not account for financing, insurance, taxes, or resale-market conditions. Treat the output as a reason to think, not as advice.</p>
+      </div>
+    </div>
+
+    <div class="callout note">
+      <strong>How to read the ratio.</strong>
+      A ratio of 10× means the regret exposure is ten times the rental cost — the rental is a small insurance premium against a much larger risk, and is easy to justify. A ratio of 1× means the rental cost and the regret exposure are similar — the decision depends on your uncertainty. A ratio below 1× means the rental costs more than the modeled regret exposure, which is unusual and probably means you are either very confident in your purchase or you are overpaying for the rental.
+    </div>
+  </section>
+
+  <section>
+    <h2>How to estimate "regret exposure"</h2>
+    <p>Regret exposure is the financial hit you would take if you bought the car, decided within 1–2 years that it was the wrong car, and sold it or traded it in. It is not the same as depreciation, because you would have taken some depreciation anyway. It is the <em>excess</em> depreciation plus the transaction costs of buying and selling twice.</p>
+    <p>A reasonable starting framework:</p>
+    <ul>
+      <li><strong>10% of purchase price</strong> if you are highly confident in the platform (you have driven similar vehicles, you know the category, and you have a specific trim picked out).</li>
+      <li><strong>15–20% of purchase price</strong> if you are moderately confident (you have done research but have not lived with the category).</li>
+      <li><strong>25–35% of purchase price</strong> if you are switching categories (e.g., going from a sedan to an EV, or from a car to a full-size truck) and have no lived experience with the new category.</li>
+    </ul>
+    <p>Adjust up if you have a history of car regret, if your household needs are changing (new baby, new commute, new driver), or if you are buying a category with steep first-year depreciation. Adjust down if you have a long ownership horizon (7+ years) and would not flip the car even if it annoyed you.</p>
+    <p>This is a heuristic, not a calculation. The point is to make your uncertainty visible to yourself, not to forecast a precise number.</p>
+  </section>
+
+  <section>
+    <h2>What the calculator does not do</h2>
+    <ul>
+      <li><strong>It does not quote rental rates.</strong> Rates vary by region, season, rental company, and booking lead time. Look up actual rates for your area and dates.</li>
+      <li><strong>It does not quote vehicle prices.</strong> Use the specific price you are considering, including taxes and fees if you want a more conservative estimate.</li>
+      <li><strong>It does not account for financing.</strong> If you are financing the purchase, the regret exposure may be larger because you have to settle the loan when you sell — but modeling that requires financial advice we cannot give.</li>
+      <li><strong>It does not account for tax credits or incentives.</strong> For EVs especially, tax credits can materially affect the regret exposure. Talk to a tax professional.</li>
+      <li><strong>It does not provide a yes/no answer.</strong> It gives you a ratio and a plain-language interpretation. The decision is yours.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Risks and traps to watch for</h2>
+    <div class="callout warn">
+      <strong>Treating the regret percentage as a fact.</strong>
+      It is your honest estimate, not a measurement. If you set it too low because you want the rental to look unjustified, you are gaming yourself. If you set it too high because you want permission to rent, same problem. Be honest with yourself.
+    </div>
+    <div class="callout warn">
+      <strong>Forgetting transaction costs.</strong>
+      Sales tax, registration, dealer fees, and the spread between trade-in and private-sale price are real money. If you flip a car in 1–2 years, you eat these twice. The 15–20% starting point above tries to capture this, but verify for your jurisdiction.
+    </div>
+    <div class="callout warn">
+      <strong>Ignoring intangible costs of regret.</strong>
+      The calculator only models money. Daily annoyance with the wrong car, family friction, and the time cost of re-shopping are real costs that the calculator does not capture. If the rental cost is a stretch but the intangible regret risk is high, the rental may still be worth it.
+    </div>
+    <div class="callout warn">
+      <strong>Using the calculator as permission to over-rent.</strong>
+      The calculator can justify a luxury rental for a budget purchase. That is not the point. Rent the closest category proxy at a reasonable rate. If the rental cost approaches the regret exposure, the rental is not justified by this framing.
+    </div>
+  </section>
+
+  <div class="cta">
+    <h3>Need to find a rental to run the test?</h3>
+    <p>Once you have decided the rental is worth it, the <a href="/how-to-find-a-similar-rental-car/">rental-finding page</a> explains how to use category bookings to land a platform close to what you are shopping.</p>
+    <a class="btn" href="/how-to-find-a-similar-rental-car/">How to find a similar rental car</a>
+  </div>
+
+  <section class="faq">
+    <h2>FAQ</h2>
+    <dl>
+      <dt>Why don't you just quote average rental rates?</dt>
+      <dd>Because they vary too widely to be useful as facts. A compact SUV rental in a major city in peak season can cost several times what the same rental costs in a small town off-season. Quoting an average would be either misleading or useless. Look up actual rates for your dates and location.</dd>
+
+      <dt>Is 15% a standard depreciation number?</dt>
+      <dd>It is a rough starting point for first-year depreciation on many cars, but actual depreciation varies by category, brand, mileage, and market conditions. Use it as a starting point and adjust based on the specific vehicle you are considering and your uncertainty.</dd>
+
+      <dt>What if I'm leasing, not buying?</dt>
+      <dd>Leasing changes the regret math substantially — early lease termination can be very expensive, often more than the depreciation exposure on a purchase. If you are leasing, the regret exposure may be higher, not lower. Talk to a financial advisor about lease termination costs before relying on this calculator.</dd>
+
+      <dt>Does this calculator work for used cars?</dt>
+      <dd>Yes, with adjustment. Used cars typically depreciate more slowly than new cars in absolute dollars, but the transaction costs of buying and selling twice are the same. Use a regret percentage closer to 10–15% for used cars, and remember the used-car PPI (see <a href="/used-car-platform-test/">the used/CPO page</a>) is a separate cost worth doing.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Where to go next</h2>
+    <ul>
+      <li><a href="/weekend-test-drive-checklist/">Weekend Test Drive Checklist</a> — the artifact the rental is paying for.</li>
+      <li><a href="/how-to-find-a-similar-rental-car/">How to find a similar rental car</a></li>
+      <li><a href="/used-car-platform-test/">Used &amp; CPO platform test</a> — if you are buying used, pair the rental with a PPI.</li>
+      <li><a href="/">Back to main overview</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="shell">
+    <div class="cols">
+      <div>
+        <h4>Site</h4>
+        <a href="/">Home</a>
+        <a href="/weekend-test-drive-checklist/">Checklist</a>
+        <a href="/rent-before-buying-an-ev/">EV</a>
+        <a href="/rent-before-buying-an-suv/">SUV</a>
+        <a href="/rent-before-buying-a-minivan/">Minivan</a>
+        <a href="/rent-before-buying-a-truck/">Truck</a>
+        <a href="/used-car-platform-test/">Used / CPO</a>
+      </div>
+      <div>
+        <h4>Decision tools</h4>
+        <a href="/weekend-rental-cost-vs-buyers-remorse/">Cost vs remorse</a>
+        <a href="/how-to-find-a-similar-rental-car/">Find a rental</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="/legal/privacy.html">Privacy</a>
+        <a href="/legal/disclaimer.html">Disclaimer &amp; affiliate disclosure</a>
+        <a href="/legal/methodology.html">Methodology &amp; limitations</a>
+      </div>
+    </div>
+    <div class="legal-line">
+      Rent Before You Buy is an independent, affiliate-supported editorial site. It does not sell cars, rentals, insurance, or financial products, and it does not provide professional buying, legal, financial, or mechanical advice. Content is for general decision-support only.
+    </div>
+  </div>
+</footer>
+<script src="/assets/script.js" defer></script>
+</body>
+</html>

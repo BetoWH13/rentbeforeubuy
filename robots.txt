@@ -1,5 +1,7 @@
 # Rent Before You Buy - robots.txt
-# Public indexing is allowed. Add the final absolute sitemap URL after the domain is chosen.
+# Public indexing is allowed. Replace the provisional sitemap URL after the final domain is chosen.
 
 User-agent: *
 Allow: /
+
+Sitemap: https://betowh13.github.io/rentbeforeubuy/sitemap.xml

@@ -1,0 +1,20 @@
+# Rent Before You Buy
+
+Rent Before You Buy is a car-shopping decision site focused on using a weekend rental as a practical platform test before buying a vehicle.
+
+Canonical site: https://drivebeforebuy.com/
+
+Key pages:
+- https://drivebeforebuy.com/weekend-test-drive-checklist/
+- https://drivebeforebuy.com/how-to-find-a-similar-rental-car/
+- https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/
+- https://drivebeforebuy.com/used-car-platform-test/
+- https://drivebeforebuy.com/rent-before-buying-an-ev/
+- https://drivebeforebuy.com/rent-before-buying-an-suv/
+- https://drivebeforebuy.com/rent-before-buying-a-minivan/
+- https://drivebeforebuy.com/rent-before-buying-a-truck/
+
+Editorial posture:
+- Decision support for car shoppers, not model-specific reviews.
+- No invented rental prices, vehicle prices, or trim claims.
+- Affiliate-supported rental links may appear, but the checklist and guidance should remain useful without booking through this site.

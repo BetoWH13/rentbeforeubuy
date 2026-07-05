@@ -1,63 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Provisional sitemap. Replace https://betowh13.github.io/rentbeforeubuy with the final domain before production submission. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/</loc>
+    <loc>https://drivebeforebuy.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/weekend-test-drive-checklist/</loc>
+    <loc>https://drivebeforebuy.com/weekend-test-drive-checklist/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/how-to-find-a-similar-rental-car/</loc>
+    <loc>https://drivebeforebuy.com/how-to-find-a-similar-rental-car/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/weekend-rental-cost-vs-buyers-remorse/</loc>
+    <loc>https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/rent-before-buying-an-ev/</loc>
+    <loc>https://drivebeforebuy.com/rent-before-buying-an-ev/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/rent-before-buying-an-suv/</loc>
+    <loc>https://drivebeforebuy.com/rent-before-buying-an-suv/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/rent-before-buying-a-minivan/</loc>
+    <loc>https://drivebeforebuy.com/rent-before-buying-a-minivan/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/rent-before-buying-a-truck/</loc>
+    <loc>https://drivebeforebuy.com/rent-before-buying-a-truck/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/used-car-platform-test/</loc>
+    <loc>https://drivebeforebuy.com/used-car-platform-test/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/legal/privacy.html</loc>
+    <loc>https://drivebeforebuy.com/legal/privacy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/legal/disclaimer.html</loc>
+    <loc>https://drivebeforebuy.com/legal/disclaimer.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://betowh13.github.io/rentbeforeubuy/legal/methodology.html</loc>
+    <loc>https://drivebeforebuy.com/legal/methodology.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -36,8 +36,12 @@
       badge.className = "checklist-count";
       badge.textContent = count + " checks";
 
-      button.appendChild(heading);
+      var label = document.createElement("span");
+      label.className = "checklist-section-heading";
+      label.textContent = heading.textContent;
+      button.appendChild(label);
       button.appendChild(badge);
+      section.removeChild(heading);
       section.insertBefore(button, section.firstChild);
       section.appendChild(body);
       if (index === 0) section.classList.add("is-open");
@@ -111,11 +115,31 @@
       });
     }
 
+    // Expand note fields before printing so handwritten browser notes are not clipped.
+    var printHeights = [];
+    function expandNotesForPrint() {
+      printHeights = [];
+      root.querySelectorAll("textarea.notes").forEach(function (ta) {
+        printHeights.push([ta, ta.style.height]);
+        ta.style.height = "auto";
+        ta.style.height = Math.max(56, ta.scrollHeight) + "px";
+      });
+    }
+    function restoreNotesAfterPrint() {
+      printHeights.forEach(function (entry) { entry[0].style.height = entry[1]; });
+      printHeights = [];
+    }
+    if ("onbeforeprint" in window) {
+      window.addEventListener("beforeprint", expandNotesForPrint);
+      window.addEventListener("afterprint", restoreNotesAfterPrint);
+    }
+
     // Print button
     var printBtn = document.querySelector("[data-action='print-checklist']");
     if (printBtn) {
       printBtn.addEventListener("click", function (e) {
         e.preventDefault();
+        expandNotesForPrint();
         window.print();
       });
     }

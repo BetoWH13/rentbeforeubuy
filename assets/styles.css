@@ -570,7 +570,14 @@ th {
   cursor: pointer;
   color: inherit;
 }
-.checklist-section-toggle h3 { pointer-events: none; }
+.checklist-section-heading {
+  pointer-events: none;
+  font-family: Georgia, serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  text-align: left;
+}
 .checklist-count {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 0.76rem;
@@ -803,7 +810,19 @@ th {
 @media print {
   header.site, footer.site, .checklist-tools, .cta, nav.primary { display: none !important; }
   body { background: #fff; font-size: 11pt; line-height: 1.4; color: #000; }
-  .shell { max-width: none; padding: 0; }
+  body::before {
+    content: "drivebeforebuy.com";
+    position: fixed;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-28deg);
+    font: 700 46pt Georgia, serif;
+    letter-spacing: 0.04em;
+    color: rgba(31, 59, 45, 0.08);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .shell { max-width: none; padding: 0; position: relative; z-index: 1; }
   .checklist { border: 1px solid #999; }
   .checklist section { page-break-inside: avoid; }
   .checklist label { padding: 3px 0; }
@@ -814,9 +833,9 @@ th {
     border: 1px solid #000;
     margin-top: 4px;
   }
-  .checklist .notes { border: 1px solid #999; min-height: 30px; }
+  .checklist .notes { border: 1px solid #999; min-height: 56px; overflow: visible; }
   .checklist.enhanced section .checklist-body { display: block !important; }
-  .checklist-section-toggle { padding: 0 0 6px; display: block; }
+  .checklist-section-toggle { padding: 0 0 6px; display: block; background: transparent; border: 0; }
   .checklist-count, .section-jump, .read-more summary { display: none !important; }
   .read-more[open] p, .read-more p { display: block; }
   a { color: #000; text-decoration: none; }

@@ -1,6 +1,6 @@
-# Rent Before You Buy
+# Drive Before Buy
 
-Rent Before You Buy is a car-shopping decision site focused on using a weekend rental as a practical platform test before buying a vehicle.
+Drive Before Buy is a car-shopping decision site focused on using a weekend rental as a practical platform test before buying a vehicle.
 
 Canonical site: https://drivebeforebuy.com/
 

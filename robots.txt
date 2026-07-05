@@ -1,4 +1,4 @@
-# Rent Before You Buy - robots.txt
+# Drive Before Buy - robots.txt
 
 User-agent: *
 Allow: /

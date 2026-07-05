@@ -1,4 +1,4 @@
-/* Rent Before You Buy — minimal site JS
+/* Drive Before Buy — minimal site JS
    Only powers the checklist (checkbox persistence + print) and the
    cost-vs-remorse calculator. No tracking, no analytics, no third-party calls. */
 

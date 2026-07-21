@@ -10,6 +10,9 @@
 /assets/site-theme-v2-category.css
   Cache-Control: no-store, max-age=0
 
+/assets/site-theme-v2-legal.css
+  Cache-Control: no-store, max-age=0
+
 /weekend-test-drive-checklist/*
   Cache-Control: no-store, max-age=0
 
@@ -32,4 +35,7 @@
   Cache-Control: no-store, max-age=0
 
 /how-to-find-a-similar-rental-car/*
+  Cache-Control: no-store, max-age=0
+
+/legal/*
   Cache-Control: no-store, max-age=0

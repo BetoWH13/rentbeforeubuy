@@ -1,0 +1,177 @@
+/* Drive Before Buy — inner-page v2 cost-tool extension
+   Loaded only when the page contains [data-calc].
+   Calculator behavior remains in assets/script.js. */
+
+body.inner-v2.cost-tool-page nav.primary a[href="/weekend-test-drive-checklist/"] {
+  color: var(--ink);
+  background: transparent;
+  border-color: transparent;
+}
+
+body.inner-v2.cost-tool-page nav.primary a[href="/weekend-rental-cost-vs-buyers-remorse/"] {
+  color: #fff;
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+}
+
+body.inner-v2.cost-tool-page .tool-hero {
+  padding-bottom: 2.4rem;
+}
+
+body.inner-v2.cost-tool-page .hero-actions {
+  gap: 16px;
+  align-items: center;
+}
+
+body.inner-v2.cost-tool-page .hero-actions .text-link {
+  font-weight: 800;
+  text-underline-offset: 4px;
+}
+
+body.inner-v2.cost-tool-page .calc-section {
+  padding-top: 1.2rem;
+}
+
+body.inner-v2.cost-tool-page .section-head {
+  gap: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+
+body.inner-v2.cost-tool-page .section-head .eyebrow,
+body.inner-v2.cost-tool-page .result-label {
+  color: #805612;
+  font-weight: 850;
+  letter-spacing: .1em;
+}
+
+body.inner-v2.cost-tool-page .section-head p {
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+body.inner-v2.cost-tool-page .calc {
+  background: var(--surface);
+  border-color: var(--paper-rule);
+  border-radius: 22px;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  box-shadow: 0 18px 52px rgba(31,35,28,.075);
+}
+
+body.inner-v2.cost-tool-page .calc-feature {
+  border-color: rgba(154,106,27,.28);
+}
+
+body.inner-v2.cost-tool-page .calc .row {
+  grid-template-columns: minmax(0,1fr) minmax(120px,150px);
+  gap: 18px;
+  margin: .8rem 0;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid rgba(21,23,19,.08);
+}
+
+body.inner-v2.cost-tool-page .calc .row:last-of-type {
+  border-bottom: 0;
+}
+
+body.inner-v2.cost-tool-page .calc label {
+  color: #30342d;
+  font-weight: 650;
+}
+
+body.inner-v2.cost-tool-page .calc input[type="number"] {
+  background: #fbf8f1;
+  border-color: #cfc6b5;
+  border-radius: 12px;
+  color: var(--ink);
+  padding: 10px 12px;
+  font-weight: 750;
+}
+
+body.inner-v2.cost-tool-page .calc input[type="number"]:focus {
+  outline: 3px solid rgba(154,106,27,.2);
+  border-color: #9a6a1b;
+}
+
+body.inner-v2.cost-tool-page .calc .result {
+  margin: 1.5rem -0.4rem -0.4rem;
+  padding: 1.4rem;
+  background: linear-gradient(135deg,#eee5d4,#fff8eb);
+  border: 1px solid #d2c09d;
+  border-radius: 18px;
+}
+
+body.inner-v2.cost-tool-page .calc .result p {
+  color: #2e332c;
+}
+
+body.inner-v2.cost-tool-page .calc .result .num {
+  color: var(--accent-deep);
+  font-family: Georgia,"Times New Roman",serif;
+  font-weight: 800;
+}
+
+body.inner-v2.cost-tool-page .calc .micro {
+  color: #625b4f;
+  line-height: 1.55;
+}
+
+body.inner-v2.cost-tool-page .tool-next-step {
+  background: var(--surface);
+  border-color: var(--paper-rule);
+  border-radius: 18px;
+  padding: 1.25rem 1.35rem;
+  box-shadow: 0 12px 34px rgba(31,35,28,.05);
+}
+
+body.inner-v2.cost-tool-page .tool-next-step strong {
+  color: var(--ink);
+}
+
+body.inner-v2.cost-tool-page .tool-next-step span {
+  color: var(--ink-soft);
+}
+
+body.inner-v2.cost-tool-page .callout {
+  background: rgba(255,253,248,.7);
+  border: 1px solid var(--paper-rule);
+  border-left-width: 4px;
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+}
+
+body.inner-v2.cost-tool-page .callout.note {
+  border-left-color: #9a6a1b;
+}
+
+body.inner-v2.cost-tool-page .callout.warn {
+  border-left-color: #8d4934;
+}
+
+body.inner-v2.cost-tool-page .compact-explainer {
+  background: rgba(255,253,248,.56);
+  border: 1px solid rgba(215,208,194,.75);
+  border-radius: 18px;
+  padding: 1.25rem 1.4rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width:600px) {
+  body.inner-v2.cost-tool-page .calc .row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  body.inner-v2.cost-tool-page .calc {
+    padding: 1rem;
+    border-radius: 18px;
+  }
+
+  body.inner-v2.cost-tool-page .calc .result {
+    margin: 1.2rem 0 0;
+    padding: 1.05rem;
+  }
+
+  body.inner-v2.cost-tool-page .tool-next-step {
+    padding: 1rem;
+  }
+}

@@ -5,19 +5,28 @@
 (function () {
   "use strict";
 
-  /* ---------- Checklist-only visual theme pilot ---------- */
-  function initChecklistTheme() {
+  /* ---------- Inner-page visual theme gates ---------- */
+  function appendThemeStylesheet(href, marker) {
+    if (document.querySelector("link[" + marker + "]")) return;
+    var theme = document.createElement("link");
+    theme.rel = "stylesheet";
+    theme.href = href;
+    theme.setAttribute(marker, "");
+    document.head.appendChild(theme);
+  }
+
+  function initInnerTheme() {
     var checklist = document.querySelector("[data-checklist='weekend-test-v2']");
-    if (!checklist) return;
+    var calculator = document.querySelector("[data-calc]");
+    if (!checklist && !calculator) return;
 
-    document.body.classList.add("inner-v2", "checklist-page");
+    document.body.classList.add("inner-v2");
+    appendThemeStylesheet("/assets/site-theme-v2.css", "data-inner-theme-v2");
 
-    if (!document.querySelector("link[data-inner-theme-v2]")) {
-      var theme = document.createElement("link");
-      theme.rel = "stylesheet";
-      theme.href = "/assets/site-theme-v2.css";
-      theme.setAttribute("data-inner-theme-v2", "");
-      document.head.appendChild(theme);
+    if (checklist) document.body.classList.add("checklist-page");
+    if (calculator) {
+      document.body.classList.add("cost-tool-page");
+      appendThemeStylesheet("/assets/site-theme-v2-cost.css", "data-inner-theme-v2-cost");
     }
   }
 
@@ -234,7 +243,7 @@
   }
 
   ready(function () {
-    initChecklistTheme();
+    initInnerTheme();
     initChecklist();
     initCalculator();
   });

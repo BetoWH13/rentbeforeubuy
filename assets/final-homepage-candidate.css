@@ -1,0 +1,80 @@
+/* Protected Drive Before Buy final homepage candidate */
+:root{
+  --cand-ink:#151713;
+  --cand-muted:#62675d;
+  --cand-paper:#f7f3eb;
+  --cand-card:#fffdf8;
+  --cand-line:#d8d2c5;
+  --cand-olive:#263027;
+  --cand-amber:#d79b3b;
+}
+
+body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
+
+.candidate-notice{background:#151713;color:#fff;padding:.55rem 1rem;text-align:center;font-size:.82rem;letter-spacing:.02em}
+.candidate-notice strong{color:#f0b357}
+
+.candidate-nav{position:sticky;top:0;z-index:60;background:rgba(247,243,235,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(21,23,19,.14)}
+.candidate-nav-inner{max-width:1240px;margin:auto;padding:.85rem 1.25rem;display:flex;gap:1.25rem;align-items:center;justify-content:space-between}
+.candidate-brand{display:flex;flex-direction:column;color:var(--cand-ink);text-decoration:none;font-weight:800;line-height:1}
+.candidate-brand small{font-size:.68rem;font-weight:600;color:var(--cand-muted);margin-top:.28rem;letter-spacing:.08em;text-transform:uppercase}
+.candidate-links{display:flex;flex-wrap:wrap;gap:.35rem .85rem;align-items:center;justify-content:flex-end}
+.candidate-links a{color:var(--cand-ink);text-decoration:none;font-size:.85rem;font-weight:700}
+.candidate-links a:hover,.candidate-links a:focus{text-decoration:underline;text-underline-offset:3px}
+
+.candidate-home .v14-hero-copy{max-width:820px}
+.candidate-home .v14-hero h1{max-width:900px}
+.candidate-home .v14-hero .candidate-hero-support{max-width:760px;margin-top:1rem;font-size:1rem;line-height:1.65;color:rgba(255,255,255,.86)}
+
+.candidate-section{max-width:1180px;margin:0 auto;padding:4.5rem 1.25rem}
+.candidate-section.compact{padding-top:2.5rem;padding-bottom:2.5rem}
+.candidate-section h2{font-size:clamp(1.75rem,3vw,3rem);line-height:1.08;margin:0 0 1.15rem}
+.candidate-section h3{margin:.1rem 0 .65rem}
+.candidate-section p,.candidate-section li{line-height:1.72}
+.candidate-section a{color:inherit}
+
+.candidate-positioning{display:grid;grid-template-columns:1.1fr .9fr;gap:1.5rem;align-items:start}
+.candidate-panel{background:var(--cand-card);border:1px solid var(--cand-line);border-radius:20px;padding:1.35rem;box-shadow:0 12px 40px rgba(31,35,28,.06)}
+.candidate-panel strong.label{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#7b5c22;margin-bottom:.55rem}
+
+.candidate-workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.candidate-step{display:block;text-decoration:none;background:var(--cand-card);border:1px solid var(--cand-line);border-radius:18px;padding:1.25rem;min-height:180px}
+.candidate-step span{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#7b5c22;font-weight:800}
+.candidate-step strong{display:block;font-size:1.12rem;margin:.55rem 0}
+.candidate-step:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(31,35,28,.08)}
+
+.candidate-ethics{background:var(--cand-olive);color:#f8f3e8}
+.candidate-ethics .candidate-section{padding-top:4rem;padding-bottom:4rem}
+.candidate-ethics-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.candidate-ethics-item{border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:1rem 1.1rem;background:rgba(255,255,255,.04)}
+
+.candidate-next{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem 1.5rem;padding:0;margin:1.25rem 0 0;list-style:none}
+.candidate-next li{border-bottom:1px solid var(--cand-line);padding:.7rem 0}
+.candidate-next a{font-weight:800;text-decoration:none}
+.candidate-next a:hover{text-decoration:underline}
+
+.candidate-affiliate{background:#ece3d2;border:1px solid #cbbd9e;border-radius:22px;padding:1.5rem;display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:center}
+.candidate-affiliate .v14-btn{white-space:nowrap}
+.candidate-affiliate .micro{display:block;margin-top:.55rem;font-size:.82rem;color:#625b4e}
+
+.candidate-footer{background:#151713;color:#f4efe4;padding:3.5rem 1.25rem 2rem}
+.candidate-footer-inner{max-width:1180px;margin:auto}
+.candidate-footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.candidate-footer h4{margin:0 0 .8rem;color:#f0b357}
+.candidate-footer a{display:block;color:#f4efe4;text-decoration:none;margin:.42rem 0}
+.candidate-footer a:hover{text-decoration:underline}
+.candidate-legal-line{margin-top:2rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.16);color:#c9c4b9;font-size:.85rem;line-height:1.65}
+
+@media (max-width:980px){
+  .candidate-nav-inner{align-items:flex-start}
+  .candidate-links{max-width:70%}
+  .candidate-positioning,.candidate-workflow{grid-template-columns:1fr 1fr}
+}
+
+@media (max-width:700px){
+  .candidate-nav{position:relative}
+  .candidate-nav-inner{display:block}
+  .candidate-links{max-width:none;margin-top:.85rem;justify-content:flex-start}
+  .candidate-positioning,.candidate-workflow,.candidate-ethics-grid,.candidate-next,.candidate-footer-grid,.candidate-affiliate{grid-template-columns:1fr}
+  .candidate-section{padding:3.25rem 1rem}
+}

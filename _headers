@@ -7,8 +7,17 @@
 /assets/site-theme-v2-cost.css
   Cache-Control: no-store, max-age=0
 
+/assets/site-theme-v2-category.css
+  Cache-Control: no-store, max-age=0
+
 /weekend-test-drive-checklist/*
   Cache-Control: no-store, max-age=0
 
 /weekend-rental-cost-vs-buyers-remorse/*
+  Cache-Control: no-store, max-age=0
+
+/rent-before-buying-an-ev/*
+  Cache-Control: no-store, max-age=0
+
+/rent-before-buying-an-suv/*
   Cache-Control: no-store, max-age=0

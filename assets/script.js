@@ -5,6 +5,22 @@
 (function () {
   "use strict";
 
+  /* ---------- Checklist-only visual theme pilot ---------- */
+  function initChecklistTheme() {
+    var checklist = document.querySelector("[data-checklist='weekend-test-v2']");
+    if (!checklist) return;
+
+    document.body.classList.add("inner-v2", "checklist-page");
+
+    if (!document.querySelector("link[data-inner-theme-v2]")) {
+      var theme = document.createElement("link");
+      theme.rel = "stylesheet";
+      theme.href = "/assets/site-theme-v2.css";
+      theme.setAttribute("data-inner-theme-v2", "");
+      document.head.appendChild(theme);
+    }
+  }
+
   /* ---------- Checklist: progressive section disclosure ---------- */
   function initChecklistSections(root) {
     if (!root || root.classList.contains("enhanced")) return;
@@ -218,6 +234,7 @@
   }
 
   ready(function () {
+    initChecklistTheme();
     initChecklist();
     initCalculator();
   });

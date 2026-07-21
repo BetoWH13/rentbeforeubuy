@@ -26,6 +26,20 @@ body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
 .candidate-home .v14-hero h1{max-width:900px}
 .candidate-home .v14-hero .candidate-hero-support{max-width:760px;margin-top:1rem;font-size:1rem;line-height:1.65;color:rgba(255,255,255,.86)}
 
+/* Candidate-only scroll refinements */
+.candidate-home .v14-journey{grid-template-columns:minmax(0,48%) minmax(420px,52%);background:var(--cand-paper)}
+.candidate-home .v14-stage-wrap{justify-content:center;padding:clamp(16px,2.4vw,32px);background:#101511}
+.candidate-home .v14-stage{width:min(100%,720px);aspect-ratio:16/10}
+.candidate-home .v14-beats{background:var(--cand-paper);border-left:1px solid rgba(21,23,19,.18)}
+.candidate-home .v14-beat{min-height:82vh;background:var(--cand-paper);color:var(--cand-ink);opacity:.78;border-bottom:1px solid rgba(21,23,19,.15);padding:clamp(42px,6vw,84px)}
+.candidate-home .v14-beat.active{opacity:1}
+.candidate-home .v14-beat h2{color:#11130f}
+.candidate-home .v14-beat-copy>p:last-of-type{color:#30342d}
+.candidate-home .v14-beat .v14-kicker{color:#8a5e12}
+.candidate-home .v14-beat-num{color:rgba(21,23,19,.14)}
+.candidate-home .v14-truth-strip span,
+.candidate-home .v14-decision-grid span{color:#2d312b;border-color:rgba(21,23,19,.22);background:rgba(255,255,255,.42)}
+
 .candidate-section{max-width:1180px;margin:0 auto;padding:4.5rem 1.25rem}
 .candidate-section.compact{padding-top:2.5rem;padding-bottom:2.5rem}
 .candidate-section h2{font-size:clamp(1.75rem,3vw,3rem);line-height:1.08;margin:0 0 1.15rem}
@@ -69,6 +83,16 @@ body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
   .candidate-nav-inner{align-items:flex-start}
   .candidate-links{max-width:70%}
   .candidate-positioning,.candidate-workflow{grid-template-columns:1fr 1fr}
+  .candidate-home .v14-journey{grid-template-columns:minmax(0,46%) minmax(360px,54%)}
+  .candidate-home .v14-stage{width:min(100%,620px)}
+}
+
+@media (max-width:900px){
+  .candidate-home .v14-journey{display:block}
+  .candidate-home .v14-stage-wrap{position:sticky;top:0;height:auto;padding:10px 12px;z-index:20}
+  .candidate-home .v14-stage{width:min(100%,640px);aspect-ratio:16/8.4;max-height:38vh;margin:0 auto}
+  .candidate-home .v14-beat{min-height:auto;padding:64px 24px 76px;opacity:1}
+  .candidate-home .v14-beat h2{font-size:clamp(2rem,8vw,3.4rem)}
 }
 
 @media (max-width:700px){
@@ -77,4 +101,9 @@ body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
   .candidate-links{max-width:none;margin-top:.85rem;justify-content:flex-start}
   .candidate-positioning,.candidate-workflow,.candidate-ethics-grid,.candidate-next,.candidate-footer-grid,.candidate-affiliate{grid-template-columns:1fr}
   .candidate-section{padding:3.25rem 1rem}
+  .candidate-home .v14-stage-wrap{padding:8px}
+  .candidate-home .v14-stage{aspect-ratio:16/8.1;max-height:32vh;border-radius:14px}
+  .candidate-home .v14-stage-caption{left:14px;right:14px;bottom:12px}
+  .candidate-home .v14-stage-caption strong{font-size:1.05rem;line-height:1.08;max-width:88%}
+  .candidate-home .v14-beat{padding:50px 20px 62px}
 }

@@ -1,0 +1,16 @@
+/* Drive Before Buy — legal page extension v2 */
+body.inner-v2.legal-page main.shell{max-width:860px}
+body.inner-v2.legal-page .hero{padding-bottom:2.2rem}
+body.inner-v2.legal-page .hero h1{max-width:15ch}
+body.inner-v2.legal-page main>section:not(.hero){background:rgba(255,253,248,.72);border:1px solid var(--paper-rule);border-radius:16px;padding:1.35rem 1.5rem;margin:1.15rem 0;box-shadow:0 12px 34px rgba(31,35,28,.04)}
+body.inner-v2.legal-page main>section:not(.hero)>h2:first-child{margin-top:0}
+body.inner-v2.legal-page main>section h2{font-size:clamp(1.35rem,2vw,1.7rem)}
+body.inner-v2.legal-page main>section h3{color:#805612}
+body.inner-v2.legal-page main>section ul,
+body.inner-v2.legal-page main>section ol{padding-left:1.25rem}
+body.inner-v2.legal-page main>section li+li{margin-top:.5rem}
+body.inner-v2.legal-page .callout{background:#fbf7ef;border:1px solid #d9cfbd;border-left:4px solid #9a6a1b;border-radius:14px;padding:1rem 1.1rem;color:var(--ink-soft)}
+body.inner-v2.legal-page main>p:last-child{margin-top:2rem!important;padding-top:1rem;border-top:1px solid var(--paper-rule)}
+body.inner-v2.legal-page footer.site a[href^="/legal/"]{font-weight:600}
+@media(max-width:600px){body.inner-v2.legal-page main>section:not(.hero){padding:1.05rem;border-radius:14px}body.inner-v2.legal-page .hero{padding-bottom:1.5rem}}
+@media print{body.inner-v2.legal-page main>section:not(.hero){box-shadow:none;background:#fff;border-color:#bbb}}

@@ -21,3 +21,9 @@
 
 /rent-before-buying-an-suv/*
   Cache-Control: no-store, max-age=0
+
+/rent-before-buying-a-minivan/*
+  Cache-Control: no-store, max-age=0
+
+/rent-before-buying-a-truck/*
+  Cache-Control: no-store, max-age=0

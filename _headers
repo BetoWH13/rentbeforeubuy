@@ -27,3 +27,9 @@
 
 /rent-before-buying-a-truck/*
   Cache-Control: no-store, max-age=0
+
+/used-car-platform-test/*
+  Cache-Control: no-store, max-age=0
+
+/how-to-find-a-similar-rental-car/*
+  Cache-Control: no-store, max-age=0

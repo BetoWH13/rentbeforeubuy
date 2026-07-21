@@ -3,7 +3,9 @@ body.inner-v2.category-page main.shell{max-width:920px}
 body.inner-v2.category-page.ev-page nav.primary a[href="/rent-before-buying-an-ev/"],
 body.inner-v2.category-page.suv-page nav.primary a[href="/rent-before-buying-an-suv/"],
 body.inner-v2.category-page.minivan-page nav.primary a[href="/rent-before-buying-a-minivan/"],
-body.inner-v2.category-page.truck-page nav.primary a[href="/rent-before-buying-a-truck/"]{color:#fff;background:var(--accent-deep);border-color:var(--accent-deep)}
+body.inner-v2.category-page.truck-page nav.primary a[href="/rent-before-buying-a-truck/"],
+body.inner-v2.category-page.used-page nav.primary a[href="/used-car-platform-test/"],
+body.inner-v2.category-page.find-rental-page nav.primary a[href="/how-to-find-a-similar-rental-car/"]{color:#fff;background:var(--accent-deep);border-color:var(--accent-deep)}
 body.inner-v2.category-page .hero{padding-bottom:2.7rem}
 body.inner-v2.category-page .hero h1{max-width:11ch}
 body.inner-v2.category-page main>section:not(.hero){background:rgba(255,253,248,.72);border:1px solid var(--paper-rule);border-radius:18px;padding:1.5rem 1.6rem;margin:1.3rem 0;box-shadow:0 14px 38px rgba(31,35,28,.045)}

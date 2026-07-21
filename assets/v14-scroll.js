@@ -5,28 +5,35 @@ const stageTitle=document.getElementById('v14-stage-title');
 const stageCount=document.getElementById('v14-stage-count');
 const progress=document.querySelector('.v14-progress');
 
+const assetVersion='20260720-2';
 const scenePaths=[
-  '/assets/v14/01-driveway-measure.webp',
-  '/assets/v14/03-rainy-rental-claymation.webp',
-  '/assets/v14/09-papercraft-road-trip.webp',
-  '/assets/v14/02-family-clay-diorama.webp',
-  '/assets/v14/10-family-cargo-fit.webp',
-  '/assets/v14/08-highway-platform-test.webp',
-  '/assets/v14/04-neon-parking-assist.webp',
-  '/assets/v14/05-mountain-charging.webp',
-  '/assets/v14/06-interior-visibility.webp',
-  '/assets/v14/07-sunset-decision.webp'
+  '/assets/v14/01-driveway-measure.webp?v='+assetVersion,
+  '/assets/v14/06-clay-system.webp?v='+assetVersion,
+  '/assets/v14/09-papercraft-road-trip.webp?v='+assetVersion,
+  '/assets/v14/02-family-clay-diorama.webp?v='+assetVersion,
+  '/assets/v14/10-family-cargo-fit.webp?v='+assetVersion,
+  '/assets/v14/08-highway-platform-test.webp?v='+assetVersion,
+  '/assets/v14/04-neon-parking-assist.webp?v='+assetVersion,
+  '/assets/v14/05-mountain-charging.webp?v='+assetVersion,
+  '/assets/v14/06-interior-visibility.webp?v='+assetVersion,
+  '/assets/v14/07-sunset-decision.webp?v='+assetVersion
 ];
 
 images.forEach((image,index)=>{
   if(scenePaths[index]) image.src=scenePaths[index];
-  image.loading=index===0?'eager':'lazy';
+  image.loading='eager';
   image.decoding='async';
+  image.fetchPriority=index<2?'high':'auto';
+});
+
+scenePaths.forEach((path)=>{
+  const preload=new Image();
+  preload.src=path;
 });
 
 const hero=document.querySelector('.v14-hero');
 if(hero){
-  hero.style.backgroundImage="linear-gradient(90deg,rgba(8,11,9,.94) 0%,rgba(8,11,9,.58) 44%,rgba(8,11,9,.1) 76%),url('/assets/v14/01-driveway-measure.webp')";
+  hero.style.backgroundImage="linear-gradient(90deg,rgba(8,11,9,.94) 0%,rgba(8,11,9,.58) 44%,rgba(8,11,9,.1) 76%),url('/assets/v14/01-driveway-measure.webp?v="+assetVersion+"')";
 }
 
 function setActive(index){

@@ -1,0 +1,15 @@
+/* Drive Before Buy — category page extension v2 */
+body.inner-v2.category-page main.shell{max-width:920px}
+body.inner-v2.category-page nav.primary a[href="/rent-before-buying-an-ev/"]{color:#fff;background:var(--accent-deep);border-color:var(--accent-deep)}
+body.inner-v2.category-page .hero{padding-bottom:2.7rem}
+body.inner-v2.category-page .hero h1{max-width:11ch}
+body.inner-v2.category-page main>section:not(.hero){background:rgba(255,253,248,.72);border:1px solid var(--paper-rule);border-radius:18px;padding:1.5rem 1.6rem;margin:1.3rem 0;box-shadow:0 14px 38px rgba(31,35,28,.045)}
+body.inner-v2.category-page main>section:not(.hero)>h2:first-child{margin-top:0}
+body.inner-v2.category-page main>section h3{margin-top:1.6rem;color:#805612}
+body.inner-v2.category-page .callout{background:#fbf7ef;border:1px solid #d9cfbd;border-left:4px solid #9a6a1b;border-radius:14px;padding:1rem 1.1rem;color:var(--ink-soft)}
+body.inner-v2.category-page .callout.warn{border-left-color:#9a6a1b}
+body.inner-v2.category-page .cta{margin:1.5rem 0}
+body.inner-v2.category-page .faq dl{margin-bottom:0}
+body.inner-v2.category-page .faq dt{font-size:1.02rem}
+body.inner-v2.category-page main>section:last-child ul{padding-left:1.15rem}
+@media(max-width:600px){body.inner-v2.category-page main>section:not(.hero){padding:1.1rem;border-radius:14px}body.inner-v2.category-page .hero{padding-bottom:1.7rem}}

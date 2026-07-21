@@ -40,6 +40,16 @@ body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
 .candidate-home .v14-truth-strip span,
 .candidate-home .v14-decision-grid span{color:#2d312b;border-color:rgba(21,23,19,.22);background:rgba(255,255,255,.42)}
 
+/* Keep all copy over the dark image stage readable */
+.candidate-home .v14-stage,
+.candidate-home .v14-stage-caption,
+.candidate-home .v14-stage-caption strong,
+.candidate-home .v14-stage-caption span,
+.candidate-home .v14-stage:before{color:#fff}
+.candidate-home .v14-stage-caption strong{text-shadow:0 2px 14px rgba(0,0,0,.78)}
+.candidate-home .v14-stage-caption span{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.78)}
+.candidate-home .v14-stage:before{background:rgba(6,9,7,.78);border:1px solid rgba(255,255,255,.16)}
+
 .candidate-section{max-width:1180px;margin:0 auto;padding:4.5rem 1.25rem}
 .candidate-section.compact{padding-top:2.5rem;padding-bottom:2.5rem}
 .candidate-section h2{font-size:clamp(1.75rem,3vw,3rem);line-height:1.08;margin:0 0 1.15rem}

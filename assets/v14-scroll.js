@@ -5,18 +5,18 @@ const stageTitle=document.getElementById('v14-stage-title');
 const stageCount=document.getElementById('v14-stage-count');
 const progress=document.querySelector('.v14-progress');
 
-const assetVersion='20260720-2';
+const assetVersion='20260721-1';
 const scenePaths=[
-  '/assets/v14/01-driveway-measure.webp?v='+assetVersion,
-  '/assets/v14/06-clay-system.webp?v='+assetVersion,
-  '/assets/v14/09-papercraft-road-trip.webp?v='+assetVersion,
-  '/assets/v14/02-family-clay-diorama.webp?v='+assetVersion,
-  '/assets/v14/10-family-cargo-fit.webp?v='+assetVersion,
-  '/assets/v14/08-highway-platform-test.webp?v='+assetVersion,
-  '/assets/v14/04-neon-parking-assist.webp?v='+assetVersion,
-  '/assets/v14/05-mountain-charging.webp?v='+assetVersion,
-  '/assets/v14/06-interior-visibility.webp?v='+assetVersion,
-  '/assets/v14/07-sunset-decision.webp?v='+assetVersion
+  '/assets/01-driveway-measure.webp?v='+assetVersion,
+  '/assets/03-rainy-rental-claymation.webp?v='+assetVersion,
+  '/assets/09-papercraft-road-trip.webp?v='+assetVersion,
+  '/assets/02-family-clay-diorama.webp?v='+assetVersion,
+  '/assets/10-family-cargo-fit.webp?v='+assetVersion,
+  '/assets/08-highway-platform-test.webp?v='+assetVersion,
+  '/assets/04-neon-parking-assist.webp?v='+assetVersion,
+  '/assets/05-mountain-charging.webp?v='+assetVersion,
+  '/assets/06-interior-visibility.webp?v='+assetVersion,
+  '/assets/07-sunset-decision.webp?v='+assetVersion
 ];
 
 images.forEach((image,index)=>{
@@ -33,12 +33,12 @@ scenePaths.forEach((path)=>{
 
 const hero=document.querySelector('.v14-hero');
 if(hero){
-  hero.style.backgroundImage="linear-gradient(90deg,rgba(8,11,9,.94) 0%,rgba(8,11,9,.58) 44%,rgba(8,11,9,.1) 76%),url('/assets/v14/01-driveway-measure.webp?v="+assetVersion+"')";
+  hero.style.backgroundImage="linear-gradient(90deg,rgba(8,11,9,.94) 0%,rgba(8,11,9,.58) 44%,rgba(8,11,9,.1) 76%),url('/assets/01-driveway-measure.webp?v="+assetVersion+"')";
 }
 
 const finish=document.querySelector('.v14-finish');
 if(finish){
-  finish.style.backgroundImage="linear-gradient(rgba(11,15,12,.78),rgba(11,15,12,.94)),url('/assets/v14/07-sunset-decision.webp?v="+assetVersion+"')";
+  finish.style.backgroundImage="linear-gradient(rgba(11,15,12,.78),rgba(11,15,12,.94)),url('/assets/07-sunset-decision.webp?v="+assetVersion+"')";
 }
 
 function setActive(index){

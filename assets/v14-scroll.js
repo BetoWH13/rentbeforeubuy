@@ -36,6 +36,11 @@ if(hero){
   hero.style.backgroundImage="linear-gradient(90deg,rgba(8,11,9,.94) 0%,rgba(8,11,9,.58) 44%,rgba(8,11,9,.1) 76%),url('/assets/v14/01-driveway-measure.webp?v="+assetVersion+"')";
 }
 
+const finish=document.querySelector('.v14-finish');
+if(finish){
+  finish.style.backgroundImage="linear-gradient(rgba(11,15,12,.78),rgba(11,15,12,.94)),url('/assets/v14/07-sunset-decision.webp?v="+assetVersion+"')";
+}
+
 function setActive(index){
   beats.forEach((el,i)=>el.classList.toggle('active',i===index));
   images.forEach((el,i)=>el.classList.toggle('active',i===index));

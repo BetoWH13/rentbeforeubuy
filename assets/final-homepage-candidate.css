@@ -39,6 +39,16 @@ body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
 .candidate-home .v14-hero .v14-disclaimer{opacity:.88}
 .candidate-home .v14-hero .v14-btn.secondary{color:#fff!important;border-color:rgba(255,255,255,.52);background:rgba(0,0,0,.18)}
 
+/* Keep the dark finish block readable too */
+.candidate-home .v14-finish,
+.candidate-home .v14-finish .v14-eyebrow,
+.candidate-home .v14-finish h2,
+.candidate-home .v14-finish>p{color:#fff!important}
+.candidate-home .v14-finish .v14-eyebrow,
+.candidate-home .v14-finish h2,
+.candidate-home .v14-finish>p{text-shadow:0 2px 12px rgba(0,0,0,.58)}
+.candidate-home .v14-finish .v14-btn.secondary{color:#fff!important;border-color:rgba(255,255,255,.52);background:rgba(0,0,0,.18)}
+
 /* Candidate-only scroll refinements */
 .candidate-home .v14-journey{grid-template-columns:minmax(0,48%) minmax(420px,52%);background:var(--cand-paper)}
 .candidate-home .v14-stage-wrap{justify-content:center;padding:clamp(16px,2.4vw,32px);background:#101511}

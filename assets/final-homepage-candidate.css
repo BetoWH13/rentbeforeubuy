@@ -67,6 +67,17 @@ body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
 .candidate-step strong{display:block;font-size:1.12rem;margin:.55rem 0}
 .candidate-step:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(31,35,28,.08)}
 
+/* Human-first homepage modules retained after the knowledge-section trim */
+.candidate-section .v14-tool-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:25px 0 0}
+.candidate-section .v14-tool-link{display:block;padding:22px;border-radius:14px;text-decoration:none;background:#182019;color:#f4efe5!important;border:1px solid rgba(255,255,255,.08)}
+.candidate-section .v14-tool-link small{display:block;color:#aab58b;text-transform:uppercase;letter-spacing:.12em;font-weight:800;margin-bottom:8px}
+.candidate-section .v14-tool-link strong{display:block;font-family:Georgia,serif;font-size:1.35rem;line-height:1.05;margin-bottom:9px}
+.candidate-section .v14-tool-link span{font-size:.86rem;color:#c9c8bf}
+.candidate-section .v14-factor-table{width:100%;border-collapse:collapse;margin:24px 0 0;background:var(--cand-card);border-radius:16px;overflow:hidden}
+.candidate-section .v14-factor-table th,.candidate-section .v14-factor-table td{padding:16px;text-align:left;vertical-align:top;border-bottom:1px solid rgba(27,39,30,.1)}
+.candidate-section .v14-factor-table th{background:#e4dfd4;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:#394239}
+.candidate-section .v14-factor-table td:first-child{font-weight:800;color:#1e2a21}
+
 .candidate-ethics{background:var(--cand-olive);color:#f8f3e8}
 .candidate-ethics .candidate-section{padding-top:4rem;padding-bottom:4rem}
 .candidate-ethics-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
@@ -95,6 +106,7 @@ body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
   .candidate-positioning,.candidate-workflow{grid-template-columns:1fr 1fr}
   .candidate-home .v14-journey{grid-template-columns:minmax(0,46%) minmax(360px,54%)}
   .candidate-home .v14-stage{width:min(100%,620px)}
+  .candidate-section .v14-tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 
 @media (max-width:900px){
@@ -103,6 +115,7 @@ body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
   .candidate-home .v14-stage{width:min(100%,640px);aspect-ratio:16/8.4;max-height:38vh;margin:0 auto}
   .candidate-home .v14-beat{min-height:auto;padding:64px 24px 76px;opacity:1}
   .candidate-home .v14-beat h2{font-size:clamp(2rem,8vw,3.4rem)}
+  .candidate-section .v14-factor-table{display:block;overflow-x:auto;white-space:normal}
 }
 
 @media (max-width:700px){
@@ -111,6 +124,7 @@ body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
   .candidate-links{max-width:none;margin-top:.85rem;justify-content:flex-start}
   .candidate-positioning,.candidate-workflow,.candidate-ethics-grid,.candidate-next,.candidate-footer-grid,.candidate-affiliate{grid-template-columns:1fr}
   .candidate-section{padding:3.25rem 1rem}
+  .candidate-section .v14-tool-grid{grid-template-columns:1fr}
   .candidate-home .v14-stage-wrap{padding:8px}
   .candidate-home .v14-stage{aspect-ratio:16/8.1;max-height:32vh;border-radius:14px}
   .candidate-home .v14-stage-caption{left:14px;right:14px;bottom:12px}

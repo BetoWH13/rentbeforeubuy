@@ -26,6 +26,19 @@ body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
 .candidate-home .v14-hero h1{max-width:900px}
 .candidate-home .v14-hero .candidate-hero-support{max-width:760px;margin-top:1rem;font-size:1rem;line-height:1.65;color:rgba(255,255,255,.86)}
 
+/* Keep every piece of hero copy readable over the dark photo */
+.candidate-home .v14-hero,
+.candidate-home .v14-hero h1,
+.candidate-home .v14-hero .v14-eyebrow,
+.candidate-home .v14-hero-copy>p,
+.candidate-home .v14-hero .candidate-hero-support,
+.candidate-home .v14-hero .v14-disclaimer{color:#fff!important}
+.candidate-home .v14-hero h1,
+.candidate-home .v14-hero .v14-eyebrow,
+.candidate-home .v14-hero-copy>p{text-shadow:0 2px 12px rgba(0,0,0,.58)}
+.candidate-home .v14-hero .v14-disclaimer{opacity:.88}
+.candidate-home .v14-hero .v14-btn.secondary{color:#fff!important;border-color:rgba(255,255,255,.52);background:rgba(0,0,0,.18)}
+
 /* Candidate-only scroll refinements */
 .candidate-home .v14-journey{grid-template-columns:minmax(0,48%) minmax(420px,52%);background:var(--cand-paper)}
 .candidate-home .v14-stage-wrap{justify-content:center;padding:clamp(16px,2.4vw,32px);background:#101511}

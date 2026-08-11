@@ -1,6 +1,6 @@
 # Drive Before Buy
 
-Drive Before Buy is a car-shopping decision site focused on using a weekend rental as a practical platform test before buying a vehicle.
+Drive Before Buy is a car-shopping decision site focused on using a weekend rental as a practical real-life fit test before buying a vehicle.
 
 Canonical site: https://drivebeforebuy.com/
 
@@ -16,5 +16,8 @@ Key pages:
 
 Editorial posture:
 - Decision support for car shoppers, not model-specific reviews.
-- No invented rental prices, vehicle prices, or trim claims.
-- Affiliate-supported rental links may appear, but the checklist and guidance should remain useful without booking through this site.
+- Try the exact model when possible; otherwise use the closest useful substitute only for questions it can actually answer.
+- A rental can test daily-life fit but cannot establish the condition, reliability, value, or suitability of a specific vehicle for purchase.
+- The rental-cost estimator totals user-entered known costs only. It does not model depreciation, resale value, financing, or future regret.
+- No invented rental prices, vehicle prices, trim claims, or buyer-remorse percentages.
+- Affiliate-supported rental links may appear, but the checklist and guidance remain usable without booking through this site.

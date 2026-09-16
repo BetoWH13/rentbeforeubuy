@@ -653,6 +653,21 @@ th {
 .checklist-tools button:hover { border-color: var(--accent); color: var(--accent-deep); }
 .checklist-tools button.primary { background: var(--accent-deep); color: #fff; border-color: var(--accent-deep); }
 .checklist-tools button.primary:hover { background: var(--accent); }
+.checklist-tools .checklist-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent-deep);
+  border-radius: 6px;
+  padding: 9px 14px;
+  color: var(--accent-deep);
+  background: #fff;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.checklist-tools .checklist-download:hover { border-color: var(--accent); color: var(--accent); }
 
 /* Calculator */
 .calc {
@@ -789,7 +804,7 @@ th {
   }
   nav.primary a { padding: 7px 9px; white-space: nowrap; }
   .hero-actions, .checklist-tools { display: grid; grid-template-columns: 1fr; }
-  .btn, .cta .btn, .checklist-tools button { width: 100%; }
+  .btn, .cta .btn, .checklist-tools button, .checklist-tools .checklist-download { width: 100%; }
   .cta, .calc, .toc, .intro-panel { padding: 1em; }
   .tool-strip, .section-head { grid-template-columns: 1fr; }
   .tool-card { padding: 1em; }

@@ -154,3 +154,7 @@ body.v14.candidate-home{background:var(--cand-paper);color:var(--cand-ink)}
   .candidate-home .v14-stage-caption strong{font-size:1.05rem;line-height:1.08;max-width:88%}
   .candidate-home .v14-beat{padding:50px 20px 62px}
 }
+/* Rental evidence: retain the existing scene layout and responsive table. */
+.candidate-home #rental-match{scroll-margin-top:100px}
+.candidate-editorial-note{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--cand-line);font-size:.85rem;color:#4e5449}
+.candidate-editorial-note p{margin:.6rem 0}

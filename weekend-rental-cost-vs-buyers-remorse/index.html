@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weekend Rental Cost Estimator — Drive Before Buy</title>
-  <meta name="description" content="Estimate the known out-of-pocket cost of a weekend rental before using it to test a car in your real life. No regret percentages or speculative resale math.">
+  <title>Weekend Car Rental Cost Calculator (2–3 Day Estimate)</title>
+  <meta name="description" content="Estimate a two- or three-day car rental cost using your real quote, including taxes, fees, protection, fuel or charging, parking, tolls, and other known costs.">
   <link rel="canonical" href="https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/">
-  <meta property="og:title" content="Weekend Rental Cost Estimator — Drive Before Buy">
+  <meta property="og:title" content="Weekend Car Rental Cost Calculator (2–3 Day Estimate)">
   <meta property="og:description" content="Add up the known cost of a weekend rental, then decide whether the real-life test is worth that amount to you.">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
   <meta property="og:url" content="https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/">
   <meta property="og:site_name" content="Drive Before Buy">
   <meta name="twitter:card" content="summary">
@@ -19,10 +19,32 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Drive Before Buy","item":"https://drivebeforebuy.com/"},
-      {"@type":"ListItem","position":2,"name":"Weekend Rental Cost Estimator","item":"https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/"}
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Weekend Car Rental Cost Calculator",
+        "description": "A calculator for totaling a two- or three-day rental quote and other known test-drive costs.",
+        "url": "https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type":"Offer","price":"0","priceCurrency":"USD"}
+      },
+      {
+        "@type": "Article",
+        "headline": "Weekend Car Rental Cost Calculator",
+        "datePublished": "2026-07-03",
+        "dateModified": "2026-09-16",
+        "mainEntityOfPage": "https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/",
+        "author": {"@type":"Organization","name":"Drive Before Buy"},
+        "publisher": {"@type":"Organization","name":"Drive Before Buy","url":"https://drivebeforebuy.com/"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Drive Before Buy","item":"https://drivebeforebuy.com/"},
+          {"@type":"ListItem","position":2,"name":"Weekend Car Rental Cost Calculator","item":"https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/"}
+        ]
+      }
     ]
   }
   </script>
@@ -44,12 +66,13 @@
 </header>
 
 <main class="shell">
-  <div class="crumbs"><a href="/">Home</a><span>›</span>Weekend Rental Cost Estimator</div>
+  <div class="crumbs"><a href="/">Home</a><span>›</span>Weekend Car Rental Cost Calculator</div>
 
   <section class="hero tool-hero">
     <div class="eyebrow">Known-cost calculator</div>
-    <h1>What will the weekend car test actually cost?</h1>
+    <h1>Weekend car rental cost calculator.</h1>
     <p class="lede">Add up the rental, protection you choose, fuel or charging, parking, tolls, and other known costs. Then make the real decision: is learning how this kind of car fits your life worth that amount to you?</p>
+    <p class="micro"><strong>Editorial responsibility: Drive Before Buy.</strong> Published July 3, 2026; reviewed <time datetime="2026-09-16">September 16, 2026</time>.</p>
     <div class="hero-actions">
       <a class="btn" href="#calculator">Estimate the weekend cost</a>
       <a class="text-link" href="/weekend-test-drive-checklist/">Open the checklist</a>
@@ -75,6 +98,10 @@
         <input type="number" id="daily-rate" data-cost="daily" value="60" min="0" step="5">
       </div>
       <div class="row">
+        <label for="taxes-fees">Taxes + mandatory fees (USD total)</label>
+        <input type="number" id="taxes-fees" data-cost="fees" value="0" min="0" step="5">
+      </div>
+      <div class="row">
         <label for="protection">Rental protection / coverage selected (USD total)</label>
         <input type="number" id="protection" data-cost="protection" value="0" min="0" step="5">
       </div>
@@ -94,7 +121,7 @@
       <div class="result">
         <div class="result-label">Estimated out-of-pocket weekend cost</div>
         <p><span class="num" data-total-cost>$0</span></p>
-        <p style="margin-top:0.8em;color:var(--ink-soft);">Use an actual rental quote when possible. Taxes and fees should be included in the daily rate or added under Other.</p>
+        <p style="margin-top:0.8em;color:var(--ink-soft);">Use the final quote when possible. Do not count a refundable authorization hold as a cost unless some or all of it is actually charged; still make sure the temporary hold fits your available credit or account balance.</p>
         <p class="micro">This is simple arithmetic using your inputs. It is not financial advice and does not estimate what buying, owning, financing, selling, or trading a vehicle may cost.</p>
       </div>
     </div>
@@ -121,6 +148,17 @@
       <li>You are unsure whether the vehicle fits your garage, parking, cargo, passengers, car seats, pets, or commute.</li>
       <li>You like the car on a dealer drive but have not lived with its controls, visibility, ride, or size for a normal day.</li>
       <li>You can find an exact model, same model in another trim, or a close enough substitute to answer the specific questions you care about.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Costs to copy from the quote or rental terms</h2>
+    <ul>
+      <li><strong>Base rate and rental length:</strong> use the dates and times on the quote, not an assumed weekend package.</li>
+      <li><strong>Taxes and mandatory fees:</strong> enter the amount separately if it is not already included in the daily rate.</li>
+      <li><strong>Protection you choose:</strong> use the quoted total for optional products you actually plan to select.</li>
+      <li><strong>Fuel, charging, tolls, and parking:</strong> estimate your planned route and the return requirements.</li>
+      <li><strong>Authorization hold or deposit:</strong> treat a refundable hold as a cash-flow constraint, not an out-of-pocket cost, unless it becomes a charge.</li>
     </ul>
   </section>
 
@@ -162,6 +200,15 @@
       <dt>Does this work for used cars?</dt>
       <dd>Yes for the daily-fit question. A weekend rental still cannot tell you the condition, history, warranty status, or mechanical health of the specific used vehicle you may buy. See the <a href="/used-car-platform-test/">Used / CPO guide</a>.</dd>
     </dl>
+  </section>
+
+  <section>
+    <h2>Sources and editorial note</h2>
+    <ul>
+      <li><a href="https://consumer.ftc.gov/articles/renting-car">Federal Trade Commission: Renting a Car</a></li>
+      <li><a href="https://www.discovercars.com/terms-and-conditions">Discover Cars rental conditions</a></li>
+    </ul>
+    <p>Sources and guidance reviewed <time datetime="2026-09-16">September 16, 2026</time>. Prices, taxes, fees, deposits, holds, protection products, fuel policies, and toll programs vary by offer and provider; use the current final quote and rental conditions.</p>
   </section>
 
   <section>
@@ -221,6 +268,7 @@
   function recalc() {
     var days = Math.max(1, n("[data-cost='days']"));
     var total = days * n("[data-cost='daily']") +
+      n("[data-cost='fees']") +
       n("[data-cost='protection']") +
       n("[data-cost='fuel']") +
       n("[data-cost='parking']") +

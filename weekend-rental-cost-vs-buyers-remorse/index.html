@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weekend Car Rental Cost Calculator (2–3 Day Estimate)</title>
-  <meta name="description" content="Estimate a two- or three-day car rental cost using your real quote, including taxes, fees, protection, fuel or charging, parking, tolls, and other known costs.">
+  <title>Weekend Car Rental Cost Calculator vs Purchase Price</title>
+  <meta name="description" content="Add up the real cost of a 2–3 day rental test, then see that cost as a percentage of the vehicle's purchase price before deciding whether the extra seat time is worth it.">
   <link rel="canonical" href="https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/">
-  <meta property="og:title" content="Weekend Car Rental Cost Calculator (2–3 Day Estimate)">
-  <meta property="og:description" content="Add up the known cost of a weekend rental, then decide whether the real-life test is worth that amount to you.">
+  <meta property="og:title" content="Weekend Car Rental Cost Calculator vs Purchase Price">
+  <meta property="og:description" content="Use your real rental quote and target vehicle price. See the test cost in dollars and as a percentage of the purchase price—without fake regret math.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/">
   <meta property="og:site_name" content="Drive Before Buy">
@@ -22,8 +22,8 @@
     "@graph": [
       {
         "@type": "WebApplication",
-        "name": "Weekend Car Rental Cost Calculator",
-        "description": "A calculator for totaling a two- or three-day rental quote and other known test-drive costs.",
+        "name": "Weekend Car Rental Cost vs Purchase Price Calculator",
+        "description": "A calculator for totaling a short rental test and expressing that cost as a percentage of a target vehicle purchase price.",
         "url": "https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Any",
@@ -31,19 +31,12 @@
       },
       {
         "@type": "Article",
-        "headline": "Weekend Car Rental Cost Calculator",
+        "headline": "Weekend Car Rental Cost Calculator vs Purchase Price",
         "datePublished": "2026-07-03",
-        "dateModified": "2026-09-16",
+        "dateModified": "2026-10-07",
         "mainEntityOfPage": "https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/",
         "author": {"@type":"Organization","name":"Drive Before Buy"},
         "publisher": {"@type":"Organization","name":"Drive Before Buy","url":"https://drivebeforebuy.com/"}
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type":"ListItem","position":1,"name":"Drive Before Buy","item":"https://drivebeforebuy.com/"},
-          {"@type":"ListItem","position":2,"name":"Weekend Car Rental Cost Calculator","item":"https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/"}
-        ]
       }
     ]
   }
@@ -52,43 +45,40 @@
 <body class="inner-v2 cost-tool-page">
 <header class="site">
   <div class="shell row">
-    <a class="brand" href="/">Drive Before Buy<small>The Weekend Car Test</small></a>
+    <a class="brand" href="/">Drive Before Buy<small>Former-rental buyer guide</small></a>
     <nav class="primary" aria-label="Primary">
+      <a href="/buying-a-former-rental-car/">Former rentals</a>
+      <a href="/how-to-tell-if-a-car-was-a-rental/">Check rental history</a>
       <a href="/weekend-test-drive-checklist/">Checklist</a>
-      <a href="/rent-before-buying-an-ev/">EV</a>
-      <a href="/rent-before-buying-an-suv/">SUV</a>
-      <a href="/rent-before-buying-a-minivan/">Minivan</a>
-      <a href="/rent-before-buying-a-truck/">Truck</a>
-      <a href="/used-car-platform-test/">Used / CPO</a>
-      <a href="/how-to-find-a-similar-rental-car/">Find a Rental</a>
+      <a href="/how-to-find-a-similar-rental-car/">Find a rental</a>
     </nav>
   </div>
 </header>
 
 <main class="shell">
-  <div class="crumbs"><a href="/">Home</a><span>›</span>Weekend Car Rental Cost Calculator</div>
+  <div class="crumbs"><a href="/">Home</a><span>›</span>Weekend rental cost calculator</div>
 
   <section class="hero tool-hero">
-    <div class="eyebrow">Known-cost calculator</div>
-    <h1>Weekend car rental cost calculator.</h1>
-    <p class="lede">Add up the rental, protection you choose, fuel or charging, parking, tolls, and other known costs. Then make the real decision: is learning how this kind of car fits your life worth that amount to you?</p>
-    <p class="micro"><strong>Editorial responsibility: Drive Before Buy.</strong> Published July 3, 2026; reviewed <time datetime="2026-09-16">September 16, 2026</time>.</p>
-    <div class="hero-actions">
-      <a class="btn" href="#calculator">Estimate the weekend cost</a>
-      <a class="text-link" href="/weekend-test-drive-checklist/">Open the checklist</a>
-    </div>
+    <div class="eyebrow">Known-cost decision tool</div>
+    <h1>Weekend car rental cost calculator vs purchase price.</h1>
+    <p class="lede">Use your real rental quote and the price of the vehicle you are considering. The tool shows the test cost in dollars and as a percentage of the purchase price. <strong>No fake “cost of regret.” No depreciation prophecy.</strong></p>
+    <p class="micro"><strong>Editorial responsibility: Drive Before Buy.</strong> Published July 3, 2026; revised <time datetime="2026-10-07">October 7, 2026</time>.</p>
   </section>
 
   <section id="calculator" class="calc-section">
     <div class="section-head">
       <div>
-        <div class="eyebrow">Use your real quote</div>
-        <h2>Weekend rental cost estimator</h2>
+        <div class="eyebrow">Use your real numbers</div>
+        <h2>What does the extra seat time cost relative to the purchase?</h2>
       </div>
-      <p>This tool totals only the amounts you enter. It does not predict depreciation, resale value, financing outcomes, or the cost of future regret.</p>
+      <p>The calculator performs simple arithmetic using only the values you enter. It does not tell you whether to buy the car.</p>
     </div>
 
     <div class="calc calc-feature" data-rental-cost-calc>
+      <div class="row">
+        <label for="purchase-price">Target vehicle purchase price (USD)</label>
+        <input type="number" id="purchase-price" data-cost="purchase" value="24000" min="0" step="500">
+      </div>
       <div class="row">
         <label for="rental-days">Rental length (days)</label>
         <input type="number" id="rental-days" data-cost="days" value="2" min="1" max="14" step="1">
@@ -114,110 +104,93 @@
         <input type="number" id="parking-tolls" data-cost="parking" value="0" min="0" step="5">
       </div>
       <div class="row">
-        <label for="other">Other known rental-test costs (USD total)</label>
+        <label for="other">Other known test costs (USD total)</label>
         <input type="number" id="other" data-cost="other" value="0" min="0" step="5">
       </div>
 
       <div class="result">
-        <div class="result-label">Estimated out-of-pocket weekend cost</div>
+        <div class="result-label">Estimated test cost</div>
         <p><span class="num" data-total-cost>$0</span></p>
-        <p style="margin-top:0.8em;color:var(--ink-soft);">Use the final quote when possible. Do not count a refundable authorization hold as a cost unless some or all of it is actually charged; still make sure the temporary hold fits your available credit or account balance.</p>
-        <p class="micro">This is simple arithmetic using your inputs. It is not financial advice and does not estimate what buying, owning, financing, selling, or trading a vehicle may cost.</p>
+        <div class="result-label">Test cost as a share of purchase price</div>
+        <p><span class="num" data-purchase-share>—</span></p>
+        <p data-decision-copy style="margin-top:0.8em;color:var(--ink-soft);">Enter a purchase price to compare the two amounts.</p>
+        <p class="micro">A small percentage does not automatically make the test worthwhile, and a larger percentage does not automatically make it wasteful. The test is useful only if it can answer an important question about the vehicle you may buy.</p>
       </div>
-    </div>
-
-    <div class="tool-next-step">
-      <div>
-        <strong>Now ask whether the information is worth that price.</strong>
-        <span>What uncertainty could the weekend remove: garage fit, seating comfort, cargo, family routine, charging, parking, controls, or something else you will live with every day?</span>
-      </div>
-      <a class="btn" href="/weekend-test-drive-checklist/">Run the Weekend Car Test</a>
     </div>
   </section>
 
   <section class="compact-explainer">
-    <h2>What this tool is for</h2>
-    <p>The old version of this page tried to compare rental cost with a modeled “regret exposure” percentage. That creates precision we cannot honestly know in advance. This version keeps the useful half of the idea: make the <strong>known cost of testing</strong> visible.</p>
-    <p>Once you know the weekend will cost, say, $180 or $320, the next question is personal rather than mathematical: would resolving your biggest uncertainty before a large purchase be worth that amount?</p>
+    <h2>How to read the result</h2>
+    <p>If a two-day test costs $180 and the vehicle price is $24,000, the test costs <strong>0.75% of the purchase price</strong>. That is a factual comparison—not a prediction that the test will save you money.</p>
+    <p>The decision is whether the extra time can resolve something meaningful: seating, garage fit, cargo, controls, charging routine, highway comfort, or another issue a short seller drive did not answer.</p>
   </section>
 
   <section>
-    <h2>When a weekend test may be especially useful</h2>
-    <ul>
-      <li>You are changing vehicle type — for example sedan to SUV, SUV to minivan, gas to EV, or car to pickup.</li>
-      <li>You are unsure whether the vehicle fits your garage, parking, cargo, passengers, car seats, pets, or commute.</li>
-      <li>You like the car on a dealer drive but have not lived with its controls, visibility, ride, or size for a normal day.</li>
-      <li>You can find an exact model, same model in another trim, or a close enough substitute to answer the specific questions you care about.</li>
-    </ul>
+    <h2>For a former rental car, use the exact-car option first</h2>
+    <p>If the seller gives you meaningful time in the exact used vehicle, use that before paying to rent another car. A same-model rental is a fallback when you need more time with the model or vehicle type. It cannot verify the purchase car's history, condition, repair quality, mileage, or warranty.</p>
+    <p><a href="/buying-a-former-rental-car/"><strong>Use the former-rental buying workflow →</strong></a></p>
   </section>
 
   <section>
-    <h2>Costs to copy from the quote or rental terms</h2>
+    <h2>When paying for the rental may make sense</h2>
     <ul>
-      <li><strong>Base rate and rental length:</strong> use the dates and times on the quote, not an assumed weekend package.</li>
-      <li><strong>Taxes and mandatory fees:</strong> enter the amount separately if it is not already included in the daily rate.</li>
-      <li><strong>Protection you choose:</strong> use the quoted total for optional products you actually plan to select.</li>
-      <li><strong>Fuel, charging, tolls, and parking:</strong> estimate your planned route and the return requirements.</li>
-      <li><strong>Authorization hold or deposit:</strong> treat a refundable hold as a cash-flow constraint, not an out-of-pocket cost, unless it becomes a charge.</li>
+      <li>The seller only allows a short test and your unanswered questions require more time.</li>
+      <li>You can rent the exact model or a close enough substitute to test the issue that matters.</li>
+      <li>You are changing vehicle type and need to test real-life size, seating, cargo, parking, or charging.</li>
+      <li>The dollar cost is acceptable to you for the uncertainty the test can realistically remove.</li>
     </ul>
   </section>
 
   <section>
     <h2>When the rental may not be worth it</h2>
     <ul>
-      <li>The available rental is too different from the car you are considering to answer your important questions.</li>
-      <li>You already have substantial real-world experience with the same model or a genuinely close match.</li>
-      <li>The rental price is unusually high and the questions you need answered can be tested more directly another way.</li>
-      <li>You are using the rental to answer questions it cannot answer, such as the mechanical condition of a specific used car.</li>
+      <li>The seller already gives you enough time in the exact car.</li>
+      <li>The available rental is too different from the target vehicle to answer the important question.</li>
+      <li>You are trying to use a rental to judge the mechanical condition or history of a different used car.</li>
+      <li>The test cost is high relative to the information you expect to gain.</li>
     </ul>
   </section>
 
   <div class="cta">
-    <h3>Need the closest useful rental?</h3>
-    <p>The rental-finding guide explains the match ladder: exact model first, same model/different trim next, then a close substitute only for the questions it can actually answer.</p>
-    <a class="btn" href="/how-to-find-a-similar-rental-car/">How to find a similar rental car</a>
+    <h3>Need a useful match, not just a cheap rental?</h3>
+    <p>Start with the exact model. If it is unavailable, use a substitute only for the questions it can genuinely answer.</p>
+    <a class="btn" href="/how-to-find-a-similar-rental-car/">How to find a useful rental match</a>
   </div>
 
   <div class="cta affiliate-cta rental-banner">
     <h3>Compare rental options</h3>
-    <p>Look for the closest useful match at a price that makes sense for your test. <span class="chip affiliate">affiliate link</span></p>
+    <p>If a rental is actually useful for your decision, compare available classes and suppliers. <span class="chip affiliate">affiliate link</span></p>
     <a class="btn" href="https://www.discovercars.com/?a_aid=BetoWH13" rel="sponsored nofollow noopener" target="_blank">Compare rentals on Discover Cars</a>
-    <span class="micro">You can still book anywhere you prefer. We may earn a commission if you book through this link, at no additional cost to you.</span>
+    <span class="micro">We may earn a commission if you book through this link, at no additional cost to you. A class booking may not guarantee the exact model.</span>
   </div>
 
   <section class="faq">
     <h2>FAQ</h2>
     <dl>
-      <dt>Why did you remove the buyer's-remorse percentage?</dt>
-      <dd>Because the financial hit from changing vehicles later depends on too many unknowns to turn into a credible universal percentage. The known weekend cost is real; the future regret number was only a heuristic.</dd>
+      <dt>Why compare the rental cost with the purchase price?</dt>
+      <dd>It gives the test cost useful scale without pretending to know future depreciation, resale value, repair costs, or “regret.”</dd>
 
-      <dt>Should I include rental taxes and fees?</dt>
-      <dd>Yes. Use the final quoted rental amount when possible. If your daily-rate input does not include taxes or mandatory fees, add them under Other.</dd>
+      <dt>What if I do not know the final purchase price yet?</dt>
+      <dd>Use the current asking price as a temporary input, then update it when you have a better number. The tool is only arithmetic.</dd>
 
-      <dt>Does a cheap rental automatically mean I should do the test?</dt>
-      <dd>No. Match quality matters. A cheap rental that is too different from the car you are considering may teach you very little.</dd>
+      <dt>Should I include a refundable deposit or card hold?</dt>
+      <dd>Not as a cost unless some or all of it is actually charged. It can still matter as a temporary cash-flow or credit constraint.</dd>
 
-      <dt>Does this work for used cars?</dt>
-      <dd>Yes for the daily-fit question. A weekend rental still cannot tell you the condition, history, warranty status, or mechanical health of the specific used vehicle you may buy. See the <a href="/used-car-platform-test/">Used / CPO guide</a>.</dd>
+      <dt>Does a low percentage mean I should rent the car?</dt>
+      <dd>No. The rental still needs to be similar enough to answer an important question. A cheap but irrelevant test is still weak evidence.</dd>
+
+      <dt>Does this replace checking the VIN on a former rental?</dt>
+      <dd>No. The rental test and the vehicle-history check answer different questions. Use the <a href="/how-to-tell-if-a-car-was-a-rental/">rental-history verification guide</a> for the exact VIN.</dd>
     </dl>
-  </section>
-
-  <section>
-    <h2>Sources and editorial note</h2>
-    <ul>
-      <li><a href="https://consumer.ftc.gov/articles/renting-car">Federal Trade Commission: Renting a Car</a></li>
-      <li><a href="https://www.discovercars.com/terms-and-conditions">Discover Cars rental conditions</a></li>
-    </ul>
-    <p>Sources and guidance reviewed <time datetime="2026-09-16">September 16, 2026</time>. Prices, taxes, fees, deposits, holds, protection products, fuel policies, and toll programs vary by offer and provider; use the current final quote and rental conditions.</p>
   </section>
 
   <section>
     <h2>Where to go next</h2>
     <ul>
-      <li><a href="/weekend-test-drive-checklist/">Weekend Test Drive Checklist</a> — turn the rental into useful observations.</li>
+      <li><a href="/buying-a-former-rental-car/">Buying a former rental car</a> — the full verification and decision workflow.</li>
+      <li><a href="/weekend-test-drive-checklist/">Weekend Test Drive Checklist</a> — turn extra seat time into useful observations.</li>
       <li><a href="/how-to-find-a-similar-rental-car/">How to find a similar rental car</a> — judge match quality before booking.</li>
       <li><a href="/used-car-platform-test/">Used / CPO guide</a> — separate daily fit from exact-unit verification.</li>
-      <li><a href="/">Back to main overview</a></li>
     </ul>
   </section>
 </main>
@@ -225,31 +198,11 @@
 <footer class="site">
   <div class="shell">
     <div class="cols">
-      <div>
-        <h4>Site</h4>
-        <a href="/">Home</a>
-        <a href="/weekend-test-drive-checklist/">Checklist</a>
-        <a href="/rent-before-buying-an-ev/">EV</a>
-        <a href="/rent-before-buying-an-suv/">SUV</a>
-        <a href="/rent-before-buying-a-minivan/">Minivan</a>
-        <a href="/rent-before-buying-a-truck/">Truck</a>
-        <a href="/used-car-platform-test/">Used / CPO</a>
-      </div>
-      <div>
-        <h4>Decision tools</h4>
-        <a href="/weekend-rental-cost-vs-buyers-remorse/">Rental cost estimator</a>
-        <a href="/how-to-find-a-similar-rental-car/">Find a rental</a>
-      </div>
-      <div>
-        <h4>Legal</h4>
-        <a href="/legal/privacy">Privacy</a>
-        <a href="/legal/disclaimer">Disclaimer &amp; affiliate disclosure</a>
-        <a href="/legal/methodology">Methodology &amp; limitations</a>
-      </div>
+      <div><h4>Former-rental buying</h4><a href="/buying-a-former-rental-car/">Buying guide</a><a href="/how-to-tell-if-a-car-was-a-rental/">Check rental history</a><a href="/weekend-test-drive-checklist/">Drive checklist</a></div>
+      <div><h4>Decision tools</h4><a href="/how-to-find-a-similar-rental-car/">Find a similar rental</a><a href="/weekend-rental-cost-vs-buyers-remorse/">Rental cost calculator</a></div>
+      <div><h4>Legal</h4><a href="/legal/privacy">Privacy</a><a href="/legal/disclaimer">Disclaimer &amp; affiliate disclosure</a><a href="/legal/methodology">Methodology &amp; limitations</a></div>
     </div>
-    <div class="legal-line">
-      Drive Before Buy is an independent, affiliate-supported editorial site. It does not sell cars, rentals, insurance, or financial products, and it does not provide professional buying, legal, financial, or mechanical advice. Content is for general decision-support only.
-    </div>
+    <div class="legal-line">Drive Before Buy is an independent, affiliate-supported editorial site. It does not sell cars, vehicle-history reports, rentals, insurance, or financial products. Content is general decision-support only.</div>
   </div>
 </footer>
 
@@ -265,7 +218,12 @@
     return isNaN(value) || value < 0 ? 0 : value;
   }
 
+  function money(value) {
+    return "$" + value.toLocaleString("en-US", { maximumFractionDigits: 0 });
+  }
+
   function recalc() {
+    var purchase = n("[data-cost='purchase']");
     var days = Math.max(1, n("[data-cost='days']"));
     var total = days * n("[data-cost='daily']") +
       n("[data-cost='fees']") +
@@ -274,14 +232,27 @@
       n("[data-cost='parking']") +
       n("[data-cost='other']");
 
-    var out = calc.querySelector("[data-total-cost]");
-    if (out) out.textContent = "$" + total.toLocaleString("en-US", { maximumFractionDigits: 0 });
+    var totalOut = calc.querySelector("[data-total-cost]");
+    var shareOut = calc.querySelector("[data-purchase-share]");
+    var copyOut = calc.querySelector("[data-decision-copy]");
+
+    if (totalOut) totalOut.textContent = money(total);
+
+    if (purchase > 0) {
+      var share = (total / purchase) * 100;
+      if (shareOut) shareOut.textContent = share.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
+      if (copyOut) copyOut.textContent = "A " + money(total) + " test is " + share.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "% of a " + money(purchase) + " purchase price.";
+    } else {
+      if (shareOut) shareOut.textContent = "—";
+      if (copyOut) copyOut.textContent = "Enter a purchase price to compare the two amounts.";
+    }
   }
 
   calc.querySelectorAll("input[type='number']").forEach(function (input) {
     input.addEventListener("input", recalc);
     input.addEventListener("change", recalc);
   });
+
   recalc();
 })();
 </script>

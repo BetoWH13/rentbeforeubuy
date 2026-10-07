@@ -1,12 +1,18 @@
 # Drive Before Buy
 
-Drive Before Buy is a car-shopping decision site focused on using a weekend rental as a practical real-life fit test before buying a vehicle.
+Drive Before Buy is an independent, affiliate-supported buyer guide focused on former rental cars: how to verify prior rental or fleet use, interpret vehicle-history evidence, compare the price, understand seller-channel differences, inspect the exact car, and get enough seat time before buying.
 
 Canonical site: https://drivebeforebuy.com/
 
-Key pages:
+Core pages:
+- https://drivebeforebuy.com/buying-a-former-rental-car/
+- https://drivebeforebuy.com/how-to-tell-if-a-car-was-a-rental/
+- https://drivebeforebuy.com/what-does-rental-fleet-use-mean/
+- https://drivebeforebuy.com/how-much-cheaper-should-a-former-rental-car-be/
+- https://drivebeforebuy.com/buy-former-rental-direct-or-from-dealer/
+
+Supporting decision tools:
 - https://drivebeforebuy.com/weekend-test-drive-checklist/
-- https://drivebeforebuy.com/how-to-get-an-extended-test-drive/
 - https://drivebeforebuy.com/how-to-find-a-similar-rental-car/
 - https://drivebeforebuy.com/weekend-rental-cost-vs-buyers-remorse/
 - https://drivebeforebuy.com/used-car-platform-test/
@@ -14,13 +20,13 @@ Key pages:
 - https://drivebeforebuy.com/test-an-ev-without-home-charging/
 - https://drivebeforebuy.com/rent-before-buying-an-suv/
 - https://drivebeforebuy.com/rent-before-buying-a-minivan/
-- https://drivebeforebuy.com/minivan-vs-suv-rental/
 - https://drivebeforebuy.com/rent-before-buying-a-truck/
 
 Editorial posture:
-- Decision support for car shoppers, not model-specific reviews.
-- Try the exact model when possible; otherwise use the closest useful substitute only for questions it can actually answer.
-- A rental can test daily-life fit but cannot establish the condition, reliability, value, or suitability of a specific vehicle for purchase.
-- The rental-cost estimator totals user-entered known costs only. It does not model depreciation, resale value, financing, or future regret.
-- No invented rental prices, vehicle prices, trim claims, or buyer-remorse percentages.
-- Affiliate-supported rental links may appear, but the checklist and guidance remain usable without booking through this site.
+- Former rental is a fact pattern, not a verdict.
+- The VIN identifies the vehicle; it does not itself encode prior rental use.
+- Vehicle-history reports are evidence sources and may be incomplete; they do not replace inspection of the physical car.
+- Rental, fleet, lease, and commercial-use labels should be read exactly rather than treated as interchangeable.
+- There is no invented universal former-rental discount percentage; compare like with like.
+- A longer drive or rental can test daily-life fit but cannot establish the condition, reliability, or value of the exact used vehicle.
+- Affiliate links may appear to vehicle-history services and rental platforms, but editorial conclusions do not depend on using them.
